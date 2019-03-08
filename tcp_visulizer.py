@@ -84,6 +84,18 @@ class App(QDialog):
         label.move(700,850)
         label.setStyleSheet("font: 20pt Comic Sans MS")
 
+        RTTlabel = QLabel('RTT',self)
+        RTTlabel.move(200,50)
+        RTTlabel.setStyleSheet("font: 20pt Comic Sans MS")
+
+        PktLosslabel = QLabel('Dropped packet count: ',self)
+        PktLosslabel.move(900,800)
+        PktLosslabel.setStyleSheet("font: 10pt Comic Sans MS")
+
+        Successlabel = QLabel('Successful packet transfer rate: ',self)
+        Successlabel.move(1180,800)
+        Successlabel.setStyleSheet("font: 10pt Comic Sans MS")
+
         self.show()
 
     
