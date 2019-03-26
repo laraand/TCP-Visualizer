@@ -1,7 +1,13 @@
 import sys
+<<<<<<< HEAD
+from PyQt5 import QtCore, QtWidgets, QtGui
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel
+from PyQt5.QtGui import QIcon, QPixmap
+=======
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
 from PyQt5.QtGui import QIcon
+>>>>>>> mayraochoa13
 from PyQt5.QtCore import pyqtSlot
 
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
@@ -85,6 +91,7 @@ class App(QDialog):
         button10.move(1062,900)
         '''button3.clicked.connect(self.on_click)'''
 
+
         label = QLabel('Window Size',self)
         label.move(700,850)
         label.setStyleSheet("font: 20pt Comic Sans MS")
@@ -100,6 +107,21 @@ class App(QDialog):
         Successlabel = QLabel('Successful packet transfer rate: ',self)
         Successlabel.move(1180,800)
         Successlabel.setStyleSheet("font: 10pt Comic Sans MS")
+
+        buttonPlay = QPushButton('',self)
+        buttonPlay.setIcon(QtGui.QIcon('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\play.jpg'))
+        buttonPlay.setIconSize(QtCore.QSize(62,62))
+        buttonPlay.move(1286, 898)
+
+        buttonRewind = QPushButton('',self)
+        buttonRewind.setIcon(QtGui.QIcon('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\backward.png'))
+        buttonRewind.setIconSize(QtCore.QSize(62,62))
+        buttonRewind.move(1212, 898)
+
+        buttonForward = QPushButton('',self)
+        buttonForward.setIcon(QtGui.QIcon('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\forward.png'))
+        buttonForward.setIconSize(QtCore.QSize(62,62))
+        buttonForward.move(1354, 898)
 
         self.show()
             
