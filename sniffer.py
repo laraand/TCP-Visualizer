@@ -14,7 +14,7 @@ import sys
 t_end = time.time() + 20		#60 * 15 #This will run for 15 min x 60 s = 900 seconds.
 
 #Redirect all output from "prints" to a file called "pckts.txt" (change the path to work on your machine)
-sys.stdout = open("c:\\Users\\ZerkaX205TA\\Desktop\\pckts.txt", "w")
+sys.stdout = open("c:\\Users\\Andrea\\Desktop\\pckts.txt", "w")
 
 #LiveCapture with the selected interface : 'Wi-Fi'
 capture = pyshark.LiveCapture(interface='Wi-Fi')
