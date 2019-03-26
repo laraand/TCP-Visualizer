@@ -1,17 +1,22 @@
 import sys
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
- 
- 
+
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
+
+import random
+
 class App(QDialog):
  
     def __init__(self):
         super().__init__()
         self.title = 'TCP Visualizer'
-        self.left = 0
-        self.top = 0
+        self.left = 10
+        self.top = 10
         self.width = 1520
         self.height = 970
         self.initUI()
@@ -19,8 +24,8 @@ class App(QDialog):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
-
-       
+        m = PlotCanvas(self, width=5, height=4)
+        m.move(0,0)
         button = QPushButton('1', self)
         button.resize(70,70)
         button.move(450,900)
@@ -97,12 +102,35 @@ class App(QDialog):
         Successlabel.setStyleSheet("font: 10pt Comic Sans MS")
 
         self.show()
-
-    
             
     @pyqtSlot()
     def on_click(self):
         print('button clicked')
+
+
+class PlotCanvas(FigureCanvas):
+    print("HEY")
+    def __init__(self, parent=None, width=5, height=4, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+        self.axes = fig.add_subplot(111)
+	
+ 
+        FigureCanvas.__init__(self, fig)
+        self.setParent(parent)
+ 
+        FigureCanvas.setSizePolicy(self,
+                QSizePolicy.Expanding,
+                QSizePolicy.Expanding)
+        FigureCanvas.updateGeometry(self)
+        self.plot()
+ 
+ 
+    def plot(self):
+        data = [random.random() for i in range(25)]
+        ax = self.figure.add_subplot(111)
+        ax.plot(data, 'r-')
+        ax.set_title('TCP')
+        self.draw()
  
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -6,7 +6,7 @@ import re
 
 
 #Variables
-filename = "c:\\Users\\ZerkaX205TA\\Desktop\\pckts.txt"
+filename = "c:\\Users\\Mayra Ochoa\\Desktop\\pckts.txt"
 
 # Windows - This can be used to open the chrome browser from this script with a specified link
 # url = 'http://docs.python.org/'
