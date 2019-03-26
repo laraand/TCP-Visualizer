@@ -1,13 +1,8 @@
 import sys
-<<<<<<< HEAD
-from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel
-from PyQt5.QtGui import QIcon, QPixmap
-=======
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
 from PyQt5.QtGui import QIcon
->>>>>>> mayraochoa13
+
 from PyQt5.QtCore import pyqtSlot
 
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
