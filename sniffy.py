@@ -25,7 +25,8 @@ def parse():
     #Parse
     for line in contents:
         firstParse.append(line.strip()) # add line to array as we pass through (strip removes newline)
-        print(line.strip()) # print lines as we're going through file
+        #print(line.strip()) # print lines as we're going through file
+        print(line)
 
     file.close()
 
@@ -46,11 +47,16 @@ print(capture)
 for pkt in capture:
     #this allows for the for loop to be exectued until the counter reaches our desired time limit
     #if(time.time() < t_end):
-    print (pkt)
+    if (pkt.transport_layer != "UDP"):
+        print (pkt.transport_layer)
+    else:
+        print("Thats UDP Garbage\n")
+        numPackets += 1
 
 file.close()
 sys.stdout = sys.__stdout__
 
 print ("Capture Data Finished")
 parse()
+print(numPackets)
 print("parse finished running")
