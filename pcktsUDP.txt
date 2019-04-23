@@ -1,0 +1,5167 @@
+<LiveCapture (80 packets)>
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x5b99 (23449)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xa7a5 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1461    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xe5df [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 0.000000000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 438)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 424
+	Identification: 0x5b9a (23450)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xabd8 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 384
+	Sequence number: 1461    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x7c23 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1844
+	Bytes sent since last PSH flag: 1844
+	Timestamps
+	Time since first frame in this TCP stream: 0.000008000 seconds
+	Time since previous frame in this TCP stream: 0.000008000 seconds
+	TCP payload (384 bytes)
+	TCP segment data (384 bytes)
+DATALayer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1839
+	Encrypted Application Data: 000000000000000da18ad9fd898568b08cce0f96a6ee0602...
+
+Packet (Length: 60)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Padding: 00009ad70e44
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x832b (33579)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xcaa7 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x8415 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 2
+	The RTT to ACK the segment was: 0.017329000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.017337000 seconds
+	Time since previous frame in this TCP stream: 0.017329000 seconds
+
+Packet (Length: 150)
+Layer ETH:
+	Destination: 33:33:00:00:00:01
+	Address: 33:33:00:00:00:01
+	.... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+	.... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 96
+	Next Header: ICMPv6 (58)
+	Hop Limit: 255
+	Source: fe80::200:caff:fe11:2233
+	Destination: ff02::1
+	Source SA MAC: 00:00:ca:11:22:33
+Layer ICMPV6:
+	Type: Router Advertisement (134)
+	Code: 0
+	Checksum: 0x5865 [correct]
+	Checksum Status: Good
+	Cur hop limit: 64
+	Flags: 0x40, Other configuration, Prf (Default Router Preference): Medium
+	0... .... = Managed address configuration: Not set
+	.1.. .... = Other configuration: Set
+	..0. .... = Home Agent: Not set
+	...0 0... = Prf (Default Router Preference): Medium (0)
+	.... .0.. = Proxy: Not set
+	.... ..0. = Reserved: 0
+	Router lifetime (s): 1800
+	Reachable time (ms): 3600000
+	Retrans timer (ms): 1000
+	ICMPv6 Option (Recursive DNS Server 2001:558:feed::1 2001:558:feed::2)
+	Type: Recursive DNS Server (25)
+	Length: 5 (40 bytes)
+	Reserved
+	Lifetime: Infinity (4294967295)
+	Recursive DNS Servers: 2001:558:feed::1
+	Prefix Length: 64
+	Flag: 0xc0, On-link flag(L), Autonomous address-configuration flag(A)
+	1... .... = On-link flag(L): Set
+	.1.. .... = Autonomous address-configuration flag(A): Set
+	..0. .... = Router address flag(R): Not set
+	...0 0000 = Reserved: 0
+	Valid Lifetime: 217520
+	Preferred Lifetime: 217520
+	Prefix: 2601:642:c103:d900::
+	Link-layer address: 00:00:ca:11:22:33
+	ICMPv6 Option (Prefix information : 2601:642:c103:d900::/64)
+	ICMPv6 Option (Source link-layer address : 00:00:ca:11:22:33)
+	Type: Prefix information (3)
+	Type: Source link-layer address (1)
+	Length: 4 (32 bytes)
+	Length: 1 (8 bytes)
+	Reserved
+	Recursive DNS Servers: 2001:558:feed::2
+
+Packet (Length: 314)
+Layer ETH:
+	Destination: 01:00:5e:7f:ff:fa
+	Address: 01:00:5e:7f:ff:fa
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 300
+	Identification: 0x1736 (5942)
+	Flags: 0x0000
+	0... .... .... .... = Reserved bit: Not set
+	.0.. .... .... .... = Don't fragment: Not set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 1
+	Protocol: UDP (17)
+	Header checksum: 0xa780 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 239.255.255.250
+Layer UDP:
+	Source Port: 62321
+	Destination Port: 1900
+	Length: 280
+	Checksum: 0x9e54 [unverified]
+	Checksum Status: Unverified
+	Stream index: 0
+Layer SSDP:
+	NOTIFY * HTTP/1.1\r\n
+	Expert Info (Chat/Sequence): NOTIFY * HTTP/1.1\r\n
+	NOTIFY * HTTP/1.1\r\n
+	Severity level: Chat
+	Group: Sequence
+	Request Method: NOTIFY
+	Request URI: *
+	Request Version: HTTP/1.1
+	Host: 239.255.255.250:1900\r\n
+	Cache-Control: max-age=4\r\n
+	Location: 10.0.0.17:64005\r\n
+	NT: uuid:4E50646A-B607-4ECB-9676-8DC10ABE8A5F\r\n
+	SERVER: windows/6.2 IntelUSBoverIP:1/1\r\n
+	Full request URI: http://239.255.255.250:1900*
+	\r\n
+	NTS: ssdp:alive\r\n
+	USN: uuid:4E50646A-B607-4ECB-9676-8DC10ABE8A5F::IntelUSBoverIP:1\r\n
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x832e (33582)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4f0 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 2866    (relative sequence number)
+	Next sequence number: 4326    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xf451 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	Expert Info (Warning/Sequence): Previous segment(s) not captured (common at capture start)
+	Previous segment(s) not captured (common at capture start)
+	Severity level: Warning
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460531000 seconds
+	Time since previous frame in this TCP stream: 0.443194000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x832f (33583)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4ef [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 4326    (relative sequence number)
+	Next sequence number: 5786    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x20f5 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460532000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8330 (33584)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4ee [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 5786    (relative sequence number)
+	Next sequence number: 7246    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x5187 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460533000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8331 (33585)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4ed [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 7246    (relative sequence number)
+	Next sequence number: 8706    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x3040 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460535000 seconds
+	Time since previous frame in this TCP stream: 0.000002000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8332 (33586)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4ec [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 8706    (relative sequence number)
+	Next sequence number: 10166    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x50fa [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460536000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8333 (33587)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4eb [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 10166    (relative sequence number)
+	Next sequence number: 11626    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x7ae8 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460536000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8334 (33588)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4ea [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 11626    (relative sequence number)
+	Next sequence number: 13086    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xaa9d [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.460537000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5b9b (23451)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4b [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xe7de [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-4326
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 4326 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 1
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#1)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460571000 seconds
+	Time since previous frame in this TCP stream: 0.000034000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#1)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5b9c (23452)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4a [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xe22a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-5786
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 5786 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 2
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#2)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460629000 seconds
+	Time since previous frame in this TCP stream: 0.000058000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#2)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5b9d (23453)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad49 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xdc76 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-7246
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 7246 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 3
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#3)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460664000 seconds
+	Time since previous frame in this TCP stream: 0.000035000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#3)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5b9e (23454)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad48 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xd6c2 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-8706
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 8706 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 4
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#4)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460698000 seconds
+	Time since previous frame in this TCP stream: 0.000034000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#4)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5b9f (23455)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad47 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xd10e [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-10166
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 10166 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 5
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#5)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460720000 seconds
+	Time since previous frame in this TCP stream: 0.000022000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#5)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5ba0 (23456)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad46 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xcb5a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-11626
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 11626 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 6
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#6)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460741000 seconds
+	Time since previous frame in this TCP stream: 0.000021000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#6)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5ba1 (23457)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad45 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xc5a6 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-13086
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 13086 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 7
+	Duplicate to the ACK in frame: 1
+	Expert Info (Note/Sequence): Duplicate ACK (#7)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460761000 seconds
+	Time since previous frame in this TCP stream: 0.000020000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#7)
+
+Packet (Length: 1459)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1445
+	Identification: 0x832c (33580)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc529 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1405
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1406    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xee08 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 13085
+	Bytes sent since last PSH flag: 1405
+	TCP Analysis Flags
+	Expert Info (Note/Sequence): This frame is a (suspected) fast retransmission
+	This frame is a (suspected) fast retransmission
+	Severity level: Note
+	Group: Sequence
+	This frame is a (suspected) retransmission
+	Timestamps
+	Time since first frame in this TCP stream: 0.460869000 seconds
+	Time since previous frame in this TCP stream: 0.000108000 seconds
+	TCP payload (1405 bytes)
+	Expert Info (Note/Sequence): This frame is a (suspected) retransmission
+	Severity level: Note
+	Group: Sequence
+Layer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1400
+	Encrypted Application Data: a49161f60efdade8f93a2c223915c08c3323fdf7d20c2ccb...
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x832d (33581)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4f1 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 1406    (relative sequence number)
+	Next sequence number: 2866    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x3766 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 13085
+	Bytes sent since last PSH flag: 1460
+	TCP Analysis Flags
+	Expert Info (Warning/Sequence): This frame is a (suspected) out-of-order segment
+	This frame is a (suspected) out-of-order segment
+	Severity level: Warning
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.460870000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5ba2 (23458)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad44 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 1406    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2355
+	Calculated window size: 2355
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xc02f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 2866-13086
+	Length: 10
+	left edge = 2866 (relative)
+	right edge = 13086 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 20
+	The RTT to ACK the segment was: 0.000022000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.460891000 seconds
+	Time since previous frame in this TCP stream: 0.000021000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5ba3 (23459)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4f [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 13086    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x4a74 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 12
+	The RTT to ACK the segment was: 0.000408000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.460945000 seconds
+	Time since previous frame in this TCP stream: 0.000054000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8335 (33589)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e9 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 13086    (relative sequence number)
+	Next sequence number: 14546    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x9892 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 2920
+	Timestamps
+	Time since first frame in this TCP stream: 0.462288000 seconds
+	Time since previous frame in this TCP stream: 0.001343000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8336 (33590)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e8 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 14546    (relative sequence number)
+	Next sequence number: 16006    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x486b [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 4380
+	Timestamps
+	Time since first frame in this TCP stream: 0.462289000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5ba4 (23460)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4e [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 16006    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x3f0c [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 25
+	The RTT to ACK the segment was: 0.000059000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.462348000 seconds
+	Time since previous frame in this TCP stream: 0.000059000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8337 (33591)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e7 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 16006    (relative sequence number)
+	Next sequence number: 17466    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xebcb [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 5840
+	Timestamps
+	Time since first frame in this TCP stream: 0.463867000 seconds
+	Time since previous frame in this TCP stream: 0.001519000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8338 (33592)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e6 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 17466    (relative sequence number)
+	Next sequence number: 18926    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x611f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 7300
+	Timestamps
+	Time since first frame in this TCP stream: 0.464184000 seconds
+	Time since previous frame in this TCP stream: 0.000317000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5ba5 (23461)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4d [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 18926    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x33a4 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 28
+	The RTT to ACK the segment was: 0.000033000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.464217000 seconds
+	Time since previous frame in this TCP stream: 0.000033000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8339 (33593)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e5 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 18926    (relative sequence number)
+	Next sequence number: 20386    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x2a52 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 8760
+	Timestamps
+	Time since first frame in this TCP stream: 0.466707000 seconds
+	Time since previous frame in this TCP stream: 0.002490000 seconds
+	TCP payload (1460 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 434)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 420
+	Identification: 0x833a (33594)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc91c [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 380
+	Sequence number: 20386    (relative sequence number)
+	Next sequence number: 20766    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xe1d3 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1840
+	Bytes sent since last PSH flag: 9140
+	Timestamps
+	Time since first frame in this TCP stream: 0.466709000 seconds
+	Time since previous frame in this TCP stream: 0.000002000 seconds
+	TCP payload (380 bytes)
+Layer SSL:
+	Ignored Unknown Record
+	Expert Info (Warning/Protocol): Ignored Unknown Record
+	Ignored Unknown Record
+	Severity level: Warning
+	Group: Protocol
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5ba6 (23462)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad4c [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 20766    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x2c74 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 31
+	The RTT to ACK the segment was: 0.000046000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.466755000 seconds
+	Time since previous frame in this TCP stream: 0.000046000 seconds
+
+Packet (Length: 1459)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1445
+	Identification: 0x833b (33595)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc51a [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1405
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1406    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xee08 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1405
+	Bytes sent since last PSH flag: 1405
+	TCP Analysis Flags
+	Expert Info (Note/Sequence): This frame is a (suspected) spurious retransmission
+	This frame is a (suspected) spurious retransmission
+	Severity level: Note
+	Group: Sequence
+	This frame is a (suspected) retransmission
+	Timestamps
+	Time since first frame in this TCP stream: 0.478650000 seconds
+	Time since previous frame in this TCP stream: 0.011895000 seconds
+	TCP payload (1405 bytes)
+	Expert Info (Note/Sequence): This frame is a (suspected) retransmission
+	Severity level: Note
+	Group: Sequence
+Layer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1400
+	Encrypted Application Data: a49161f60efdade8f93a2c223915c08c3323fdf7d20c2ccb...
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x833c (33596)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4e2 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 1406    (relative sequence number)
+	Next sequence number: 2866    (relative sequence number)
+	Acknowledgment number: 1845    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 693
+	Calculated window size: 693
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x3766 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2865
+	Bytes sent since last PSH flag: 1460
+	TCP Analysis Flags
+	Expert Info (Note/Sequence): This frame is a (suspected) spurious retransmission
+	This frame is a (suspected) spurious retransmission
+	Severity level: Note
+	Group: Sequence
+	This frame is a (suspected) retransmission
+	Timestamps
+	Time since first frame in this TCP stream: 0.478651000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+	Expert Info (Note/Sequence): This frame is a (suspected) retransmission
+	Severity level: Note
+	Group: Sequence
+Layer SSL:
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5ba7 (23463)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3f [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 20766    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xad5a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 1-1406
+	Length: 10
+	left edge = 1 (relative)
+	right edge = 1406 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 1
+	Duplicate to the ACK in frame: 32
+	Expert Info (Note/Sequence): Duplicate ACK (#1)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.478685000 seconds
+	Time since previous frame in this TCP stream: 0.000034000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#1)
+
+Packet (Length: 66)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 52
+	Identification: 0x5ba8 (23464)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3e [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 1845    (relative sequence number)
+	Acknowledgment number: 20766    (relative ack number)
+	1000 .... = Header Length: 32 bytes (8)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xa229 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), SACK
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	TCP Option - SACK 1406-2866
+	Length: 10
+	left edge = 1406 (relative)
+	right edge = 2866 (relative)
+	TCP SACK Count: 1
+	SEQ/ACK analysis
+	TCP Analysis Flags
+	This is a TCP duplicate ack
+	Duplicate ACK #: 2
+	Duplicate to the ACK in frame: 32
+	Expert Info (Note/Sequence): Duplicate ACK (#2)
+	Severity level: Note
+	Group: Sequence
+	Timestamps
+	Time since first frame in this TCP stream: 0.478744000 seconds
+	Time since previous frame in this TCP stream: 0.000059000 seconds
+	TCP Option - No-Operation (NOP)
+	Kind: No-Operation (1)
+	Kind: SACK (5)
+	Duplicate ACK (#2)
+
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv6 (0x86dd)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 1110 0110 1000 0100 0010 = Flow Label: 0xe6842
+	Payload Length: 1338
+	Next Header: UDP (17)
+	Hop Limit: 64
+	Source: 2601:642:c103:d900:189e:4ae:221b:bec1
+	Destination: 2607:f8b0:4005:808::200e
+Layer UDP:
+	Source Port: 53571
+	Destination Port: 443
+	Length: 1338
+	Checksum: 0x2cb3 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 236)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv6 (0x86dd)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 1110 0110 1000 0100 0010 = Flow Label: 0xe6842
+	Payload Length: 182
+	Next Header: UDP (17)
+	Hop Limit: 64
+	Source: 2601:642:c103:d900:189e:4ae:221b:bec1
+	Destination: 2607:f8b0:4005:808::200e
+Layer UDP:
+	Source Port: 53571
+	Destination Port: 443
+	Length: 182
+	Checksum: 0x722a [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 82)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0010 0000 .... .... .... .... .... = Traffic Class: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	.... 0010 00.. .... .... .... .... .... = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 28
+	Next Header: UDP (17)
+	Hop Limit: 59
+	Source: 2607:f8b0:4005:808::200e
+	Destination: 2601:642:c103:d900:189e:4ae:221b:bec1
+Layer UDP:
+	Source Port: 443
+	Destination Port: 53571
+	Length: 28
+	Checksum: 0x6fcd [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 138)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0010 0000 .... .... .... .... .... = Traffic Class: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	.... 0010 00.. .... .... .... .... .... = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 84
+	Next Header: UDP (17)
+	Hop Limit: 59
+	Source: 2607:f8b0:4005:808::200e
+	Destination: 2601:642:c103:d900:189e:4ae:221b:bec1
+Layer UDP:
+	Source Port: 443
+	Destination Port: 53571
+	Length: 84
+	Checksum: 0xa4f2 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 90)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0010 0000 .... .... .... .... .... = Traffic Class: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	.... 0010 00.. .... .... .... .... .... = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 36
+	Next Header: UDP (17)
+	Hop Limit: 60
+	Source: 2607:f8b0:4005:808::200e
+	Destination: 2601:642:c103:d900:189e:4ae:221b:bec1
+Layer UDP:
+	Source Port: 443
+	Destination Port: 53571
+	Length: 36
+	Checksum: 0x040e [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 245)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0010 0000 .... .... .... .... .... = Traffic Class: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	.... 0010 00.. .... .... .... .... .... = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 191
+	Next Header: UDP (17)
+	Hop Limit: 60
+	Source: 2607:f8b0:4005:808::200e
+	Destination: 2601:642:c103:d900:189e:4ae:221b:bec1
+Layer UDP:
+	Source Port: 443
+	Destination Port: 53571
+	Length: 191
+	Checksum: 0x9395 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 93)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv6 (0x86dd)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 1110 0110 1000 0100 0010 = Flow Label: 0xe6842
+	Payload Length: 39
+	Next Header: UDP (17)
+	Hop Limit: 64
+	Source: 2601:642:c103:d900:189e:4ae:221b:bec1
+	Destination: 2607:f8b0:4005:808::200e
+Layer UDP:
+	Source Port: 53571
+	Destination Port: 443
+	Length: 39
+	Checksum: 0x450c [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 93)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv6 (0x86dd)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 1110 0110 1000 0100 0010 = Flow Label: 0xe6842
+	Payload Length: 39
+	Next Header: UDP (17)
+	Hop Limit: 64
+	Source: 2601:642:c103:d900:189e:4ae:221b:bec1
+	Destination: 2607:f8b0:4005:808::200e
+Layer UDP:
+	Source Port: 53571
+	Destination Port: 443
+	Length: 39
+	Checksum: 0xbd8b [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 421)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv6 (0x86dd)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0010 0000 .... .... .... .... .... = Traffic Class: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	.... 0010 00.. .... .... .... .... .... = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+	Payload Length: 367
+	Next Header: UDP (17)
+	Hop Limit: 59
+	Source: 2607:f8b0:4005:808::200e
+	Destination: 2601:642:c103:d900:189e:4ae:221b:bec1
+Layer UDP:
+	Source Port: 443
+	Destination Port: 53571
+	Length: 367
+	Checksum: 0x7cdd [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 90)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv6 (0x86dd)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IPV6:
+	0110 .... = Version: 6
+	.... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	.... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+	.... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	.... .... .... 1110 0110 1000 0100 0010 = Flow Label: 0xe6842
+	Payload Length: 36
+	Next Header: UDP (17)
+	Hop Limit: 64
+	Source: 2601:642:c103:d900:189e:4ae:221b:bec1
+	Destination: 2607:f8b0:4005:808::200e
+Layer UDP:
+	Source Port: 53571
+	Destination Port: 443
+	Length: 36
+	Checksum: 0x5b6b [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+DATA
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x5ba9 (23465)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xa795 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 1845    (relative sequence number)
+	Next sequence number: 3305    (relative sequence number)
+	Acknowledgment number: 20766    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xb6c2 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 1.173929000 seconds
+	Time since previous frame in this TCP stream: 0.695185000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 332)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 318
+	Identification: 0x5baa (23466)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xac32 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 278
+	Sequence number: 3305    (relative sequence number)
+	Next sequence number: 3583    (relative sequence number)
+	Acknowledgment number: 20766    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x3808 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1738
+	Bytes sent since last PSH flag: 1738
+	Timestamps
+	Time since first frame in this TCP stream: 1.173940000 seconds
+	Time since previous frame in this TCP stream: 0.000011000 seconds
+	TCP payload (278 bytes)
+	TCP segment data (278 bytes)
+DATALayer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1733
+	Encrypted Application Data: 000000000000000e1002b3eb6f7d06d79b77950df19f0f4d...
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x5bab (23467)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xa793 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64607
+	Destination Port: 443
+	Stream index: 1
+	TCP Segment Len: 1460
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1461    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 678
+	Calculated window size: 678
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x7197 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 0.000000000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 388)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 374
+	Identification: 0x5bac (23468)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xabf8 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64607
+	Destination Port: 443
+	Stream index: 1
+	TCP Segment Len: 334
+	Sequence number: 1461    (relative sequence number)
+	Next sequence number: 1795    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 678
+	Calculated window size: 678
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xc54f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1794
+	Bytes sent since last PSH flag: 1794
+	Timestamps
+	Time since first frame in this TCP stream: 0.000009000 seconds
+	Time since previous frame in this TCP stream: 0.000009000 seconds
+	TCP payload (334 bytes)
+	TCP segment data (334 bytes)
+DATALayer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1789
+	Encrypted Application Data: 000000000000000cf038dea159e04620e7a1ab6e05796312...
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x5bad (23469)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xa791 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64603
+	Destination Port: 443
+	Stream index: 2
+	TCP Segment Len: 1460
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1461    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 256
+	Calculated window size: 256
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xfc39 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 0.000000000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 304)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 290
+	Identification: 0x5bae (23470)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xac4a [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64603
+	Destination Port: 443
+	Stream index: 2
+	TCP Segment Len: 250
+	Sequence number: 1461    (relative sequence number)
+	Next sequence number: 1711    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 256
+	Calculated window size: 256
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xce1d [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1710
+	Bytes sent since last PSH flag: 1710
+	Timestamps
+	Time since first frame in this TCP stream: 0.000007000 seconds
+	Time since previous frame in this TCP stream: 0.000007000 seconds
+	TCP payload (250 bytes)
+	TCP segment data (250 bytes)
+DATALayer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1705
+	Encrypted Application Data: 000000000000000ff2f816f2ed16102fe187ecda8bcfe9d5...
+
+Packet (Length: 60)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Padding: 000000000000
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x833d (33597)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xca95 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 20766    (relative sequence number)
+	Next sequence number: 20766    (relative sequence number)
+	Acknowledgment number: 3583    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 739
+	Calculated window size: 739
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x2c00 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 48
+	The RTT to ACK the segment was: 0.013192000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 1.187132000 seconds
+	Time since previous frame in this TCP stream: 0.013192000 seconds
+
+Packet (Length: 60)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Padding: 0000828ec410
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x8019 (32793)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xcdb9 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64607
+	Stream index: 1
+	TCP Segment Len: 0
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1    (relative sequence number)
+	Acknowledgment number: 1795    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 594
+	Calculated window size: 594
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xf49e [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 50
+	The RTT to ACK the segment was: 0.021234000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.021243000 seconds
+	Time since previous frame in this TCP stream: 0.021234000 seconds
+
+Packet (Length: 60)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Padding: 000075601c65
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0xd47a (54394)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0x7958 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64603
+	Stream index: 2
+	TCP Segment Len: 0
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1    (relative sequence number)
+	Acknowledgment number: 1711    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 687
+	Calculated window size: 687
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x26a1 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 52
+	The RTT to ACK the segment was: 0.020904000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.020911000 seconds
+	Time since previous frame in this TCP stream: 0.020904000 seconds
+
+Packet (Length: 1329)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1315
+	Identification: 0xd47b (54395)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0x745c [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64603
+	Stream index: 2
+	TCP Segment Len: 1275
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1276    (relative sequence number)
+	Acknowledgment number: 1711    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 687
+	Calculated window size: 687
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xd96b [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1275
+	Bytes sent since last PSH flag: 1275
+	Timestamps
+	Time since first frame in this TCP stream: 0.168105000 seconds
+	Time since previous frame in this TCP stream: 0.147194000 seconds
+	TCP payload (1275 bytes)
+Layer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1270
+	Encrypted Application Data: c81156031c123f9a056bf9b09368120b947a0c38ea1b44ec...
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5baf (23471)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad43 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64603
+	Destination Port: 443
+	Stream index: 2
+	TCP Segment Len: 0
+	Sequence number: 1711    (relative sequence number)
+	Next sequence number: 1711    (relative sequence number)
+	Acknowledgment number: 1276    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 251
+	Calculated window size: 251
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x235a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 56
+	The RTT to ACK the segment was: 0.040346000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.208451000 seconds
+	Time since previous frame in this TCP stream: 0.040346000 seconds
+
+Packet (Length: 1214)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1200
+	Identification: 0x801a (32794)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc930 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64607
+	Stream index: 1
+	TCP Segment Len: 1160
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1161    (relative sequence number)
+	Acknowledgment number: 1795    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 594
+	Calculated window size: 594
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xd1bd [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1160
+	Bytes sent since last PSH flag: 1160
+	Timestamps
+	Time since first frame in this TCP stream: 0.328595000 seconds
+	Time since previous frame in this TCP stream: 0.307352000 seconds
+	TCP payload (1160 bytes)
+Layer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1155
+	Encrypted Application Data: 0c0bb91ede54398e8807ffbde6f3ba58c50d16365baabf89...
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb0 (23472)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad42 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64607
+	Destination Port: 443
+	Stream index: 1
+	TCP Segment Len: 0
+	Sequence number: 1795    (relative sequence number)
+	Next sequence number: 1795    (relative sequence number)
+	Acknowledgment number: 1161    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 674
+	Calculated window size: 674
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xefc6 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 58
+	The RTT to ACK the segment was: 0.040814000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 0.369409000 seconds
+	Time since previous frame in this TCP stream: 0.040814000 seconds
+
+Packet (Length: 1448)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1434
+	Identification: 0x833e (33598)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc522 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1394
+	Sequence number: 20766    (relative sequence number)
+	Next sequence number: 22160    (relative sequence number)
+	Acknowledgment number: 3583    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 739
+	Calculated window size: 739
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x32eb [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1394
+	Bytes sent since last PSH flag: 2854
+	Timestamps
+	Time since first frame in this TCP stream: 1.754547000 seconds
+	Time since previous frame in this TCP stream: 0.567415000 seconds
+	TCP payload (1394 bytes)
+Layer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1389
+	Encrypted Application Data: a49161f60efdadeb2fe4436722789efe00ac37061ce16798...
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb1 (23473)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad41 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 3583    (relative sequence number)
+	Next sequence number: 3583    (relative sequence number)
+	Acknowledgment number: 22160    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2355
+	Calculated window size: 2355
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x203e [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 60
+	The RTT to ACK the segment was: 0.040228000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 1.794775000 seconds
+	Time since previous frame in this TCP stream: 0.040228000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x5bb2 (23474)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xa78c [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 3583    (relative sequence number)
+	Next sequence number: 5043    (relative sequence number)
+	Acknowledgment number: 22160    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2355
+	Calculated window size: 2355
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xbd4f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 1.993539000 seconds
+	Time since previous frame in this TCP stream: 0.198764000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 112)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 98
+	Identification: 0x5bb3 (23475)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad05 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 58
+	Sequence number: 5043    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 22160    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2355
+	Calculated window size: 2355
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x6bf0 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1518
+	Bytes sent since last PSH flag: 1518
+	Timestamps
+	Time since first frame in this TCP stream: 1.993548000 seconds
+	Time since previous frame in this TCP stream: 0.000009000 seconds
+	TCP payload (58 bytes)
+	TCP segment data (58 bytes)
+DATALayer SSL:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 1513
+	Encrypted Application Data: 000000000000000f935dc832353e97d1d5375a0d442ff833...
+
+Packet (Length: 60)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Padding: 000000000000
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x833f (33599)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xca93 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 22160    (relative sequence number)
+	Next sequence number: 22160    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x2089 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 63
+	The RTT to ACK the segment was: 0.013039000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.006587000 seconds
+	Time since previous frame in this TCP stream: 0.013039000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8340 (33600)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4de [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 22160    (relative sequence number)
+	Next sequence number: 23620    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x51e7 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 1460
+	Timestamps
+	Time since first frame in this TCP stream: 2.011592000 seconds
+	Time since previous frame in this TCP stream: 0.005005000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+Layer SSL:
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8341 (33601)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4dd [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 23620    (relative sequence number)
+	Next sequence number: 25080    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x666c [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 2920
+	Timestamps
+	Time since first frame in this TCP stream: 2.012715000 seconds
+	Time since previous frame in this TCP stream: 0.001123000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb4 (23476)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3e [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 5101    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 25080    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x0ee2 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 66
+	The RTT to ACK the segment was: 0.000022000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.012737000 seconds
+	Time since previous frame in this TCP stream: 0.000022000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8342 (33602)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4dc [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 25080    (relative sequence number)
+	Next sequence number: 26540    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x8217 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 4380
+	Timestamps
+	Time since first frame in this TCP stream: 2.013361000 seconds
+	Time since previous frame in this TCP stream: 0.000624000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8343 (33603)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4db [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 26540    (relative sequence number)
+	Next sequence number: 28000    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xfa8a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 5840
+	Timestamps
+	Time since first frame in this TCP stream: 2.013916000 seconds
+	Time since previous frame in this TCP stream: 0.000555000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb5 (23477)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3d [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 5101    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 28000    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x037a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 69
+	The RTT to ACK the segment was: 0.000022000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.013938000 seconds
+	Time since previous frame in this TCP stream: 0.000022000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8344 (33604)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4da [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 28000    (relative sequence number)
+	Next sequence number: 29460    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xdb2f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 7300
+	Timestamps
+	Time since first frame in this TCP stream: 2.017821000 seconds
+	Time since previous frame in this TCP stream: 0.003883000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8345 (33605)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d9 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 29460    (relative sequence number)
+	Next sequence number: 30920    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x0410 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 8760
+	Timestamps
+	Time since first frame in this TCP stream: 2.018238000 seconds
+	Time since previous frame in this TCP stream: 0.000417000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb6 (23478)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3c [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 5101    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 30920    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xf811 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 72
+	The RTT to ACK the segment was: 0.000022000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.018260000 seconds
+	Time since previous frame in this TCP stream: 0.000022000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8346 (33606)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d8 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 30920    (relative sequence number)
+	Next sequence number: 32380    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xa82c [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 10220
+	Timestamps
+	Time since first frame in this TCP stream: 2.025191000 seconds
+	Time since previous frame in this TCP stream: 0.006931000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8347 (33607)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d7 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 32380    (relative sequence number)
+	Next sequence number: 33840    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x0e3a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 11680
+	Timestamps
+	Time since first frame in this TCP stream: 2.025192000 seconds
+	Time since previous frame in this TCP stream: 0.000001000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb7 (23479)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3b [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 5101    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 33840    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xeca9 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 75
+	The RTT to ACK the segment was: 0.000053000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.025245000 seconds
+	Time since previous frame in this TCP stream: 0.000053000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8348 (33608)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d6 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 33840    (relative sequence number)
+	Next sequence number: 35300    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x31a9 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 13140
+	Timestamps
+	Time since first frame in this TCP stream: 2.027762000 seconds
+	Time since previous frame in this TCP stream: 0.002517000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x8349 (33609)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d5 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 35300    (relative sequence number)
+	Next sequence number: 36760    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x6d99 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 2920
+	Bytes sent since last PSH flag: 14600
+	Timestamps
+	Time since first frame in this TCP stream: 2.027764000 seconds
+	Time since previous frame in this TCP stream: 0.000002000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
+Packet (Length: 54)
+Layer ETH:
+	Destination: 00:00:ca:11:22:33
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 94:65:9c:f2:54:40
+	Type: IPv4 (0x0800)
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x5bb8 (23480)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xad3a [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.0.0.17
+	Destination: 104.96.127.108
+Layer TCP:
+	Source Port: 64611
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 0
+	Sequence number: 5101    (relative sequence number)
+	Next sequence number: 5101    (relative sequence number)
+	Acknowledgment number: 36760    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 2361
+	Calculated window size: 2361
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xe141 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 78
+	The RTT to ACK the segment was: 0.000046000 seconds
+	Timestamps
+	Time since first frame in this TCP stream: 2.027810000 seconds
+	Time since previous frame in this TCP stream: 0.000046000 seconds
+
+Packet (Length: 1514)
+Layer ETH:
+	Destination: 94:65:9c:f2:54:40
+	Address: 94:65:9c:f2:54:40
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 00:00:ca:11:22:33
+	Type: IPv4 (0x0800)
+	Address: 00:00:ca:11:22:33
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+	0010 00.. = Differentiated Services Codepoint: Class Selector 1 (8)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1500
+	Identification: 0x834a (33610)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 59
+	Protocol: TCP (6)
+	Header checksum: 0xc4d4 [validation disabled]
+	Header checksum status: Unverified
+	Source: 104.96.127.108
+	Destination: 10.0.0.17
+Layer TCP:
+	Source Port: 443
+	Destination Port: 64611
+	Stream index: 0
+	TCP Segment Len: 1460
+	Sequence number: 36760    (relative sequence number)
+	Next sequence number: 38220    (relative sequence number)
+	Acknowledgment number: 5101    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 762
+	Calculated window size: 762
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x168f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 1460
+	Bytes sent since last PSH flag: 16060
+	Timestamps
+	Time since first frame in this TCP stream: 2.031126000 seconds
+	Time since previous frame in this TCP stream: 0.003316000 seconds
+	TCP payload (1460 bytes)
+	TCP segment data (1460 bytes)
+
