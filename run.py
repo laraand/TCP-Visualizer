@@ -12,6 +12,7 @@ from matplotlib import style
 plt.style.use('seaborn-pastel')
 import array
 
+
 class App(QDialog):
  
     def __init__(self):
@@ -19,24 +20,32 @@ class App(QDialog):
         self.title = 'TCP Visualizer'
         self.left = 10
         self.top = 10
-        self.width = 1200
-        self.height = 900
+        self.width = 1520
+        self.height = 970
         self.initUI()
         #self.keyPressEvent()
  
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
-        #set(QDialog, 'units', 'normalized', 'position', [0.05 0.15 0.9 0.8])
-        #RTTGraph
-        m = PlotCanvas(self, width=6, height=7)
-        m.move(60,140)
         
-        #UDP
-        u = PlotCanvas(self, width=6, height=7)
-        u.move(700,140)
+        #Graph
+        m = PlotCanvas(self, width=8, height=7)
+        m.move(60,140)
 
-        label = QLabel('RTT',self)
+        button = QPushButton('1', self)
+        button.resize(70,70)
+        button.move(450,900)
+        '''button.clicked.connect(self.on_click)'''
+
+        button2 = QPushButton('2', self)
+        button2.setToolTip('Window size')
+        button2.resize(70,70)
+        button2.move(518,900)
+        '''button2.clicked.connect(self.on_click)'''
+
+
+        label = QLabel('Window Size',self)
         label.move(700,850)
         label.setStyleSheet("font: 20pt Comic Sans MS")
 
@@ -45,7 +54,6 @@ class App(QDialog):
         RTTlabel.setStyleSheet("font: 20pt Comic Sans MS")
 
         PktLosslabel = QLabel('Dropped packet count: ',self)
-        #PktLosslabel = QLabel(numberOfdrop,self)
         PktLosslabel.move(900,800)
         PktLosslabel.setStyleSheet("font: 10pt Comic Sans MS")
 
@@ -84,28 +92,24 @@ class PlotCanvas(FigureCanvas):
     def plot(self):
         xList = []
         yList = []
-        numberOfdrop = 0
-        numPackets = 0
+        
         m = "Packet"
         time = "The RTT"
         ax = self.figure.add_subplot(111)
-        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
+        with open("C:\\Users\\Andrea\\Desktop\\pckts.txt", 'r') as pckts:
              for pck in pckts:
                 if m in pck:
                    num = len(pck)-2
                    x_value = int(pck[16:num])
-                   numberOfdrop += 1
-                   #print(pck[16:num])
                    
-                if "Time since previous frame" in pck:
+                if "The RTT" in pck:
                    num = len(pck)-8
-                   print(pck[47:num])
-                   y_value = float(pck[47:num])
+                   #print(pck[33:num])
+                   y_value = float(pck[33:num])
                    yList.append(y_value)
                    xList.append(x_value)
-                   numPackets += 1
+        
 
-        print(numberOfdrop-numPackets)
         ax.set_title('TCP') 
         ax.set_xlabel('Smarts')
         ax.set_ylabel('Probability')           
