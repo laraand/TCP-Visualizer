@@ -89,11 +89,7 @@ class PlotCanvas(FigureCanvas):
         m = "Packet"
         time = "The RTT"
         ax = self.figure.add_subplot(111)
-<<<<<<< HEAD
         with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
-=======
-        with open("C:\\Users\\Andrea\\Desktop\\pckts.txt", 'r') as pckts:
->>>>>>> 3a6f9614d8813beff5002e2832e2912c59f1d381
              for pck in pckts:
                 if m in pck:
                    num = len(pck)-2
