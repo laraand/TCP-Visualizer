@@ -96,7 +96,7 @@ class PlotCanvas(FigureCanvas):
         m = "Packet"
         time = "The RTT"
         ax = self.figure.add_subplot(111)
-        with open("C:\\Users\\Mayra Ochoa\\Desktop\\pckts.txt", 'r') as pckts:
+        with open("C:\\Users\\Andrea\\Desktop\\pckts.txt", 'r') as pckts:
              for pck in pckts:
                 if m in pck:
                    num = len(pck)-2

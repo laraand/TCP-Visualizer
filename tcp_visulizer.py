@@ -9,98 +9,30 @@ from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 
 import random
+import array
+
 
 class App(QDialog):
  
     def __init__(self):
         super().__init__()
-        self.title = 'TCP Visualizer'
-        self.left = 10
-        self.top = 10
-        self.width = 1520
-        self.height = 970
+        self.setWindowTitle("TCP Visualizer")
+        self.screen = QtWidgets.QDesktopWidget().setGeometry(50,50,600,400)
+        self.screen = QtWidgets.QDesktopWidget().screenGeometry(-1)
+
+        self.handshake()
         self.initUI()
- 
+        
     def initUI(self):
-        self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.width, self.height)
-        m = PlotCanvas(self, width=5, height=4)
-        m.move(0,0)
-        button = QPushButton('1', self)
-        button.resize(70,70)
-        button.move(450,900)
-        '''button.clicked.connect(self.on_click)'''
-
-        button2 = QPushButton('2', self)
-        button2.setToolTip('Window size')
-        button2.resize(70,70)
-        button2.move(518,900)
-        '''button2.clicked.connect(self.on_click)'''
-
-        button3 = QPushButton('3', self)
-        button3.setToolTip('Window size')
-        button3.resize(70,70)
-        button3.move(586,900)
-        '''button3.clicked.connect(self.on_click)'''
-
-        button4 = QPushButton('4', self)
-        button4.setToolTip('Window size')
-        button4.resize(70,70)
-        button4.move(654,900)
-        '''button4.clicked.connect(self.on_click)'''
-
-        button5 = QPushButton('5', self)
-        button5.setToolTip('Window size')
-        button5.resize(70,70)
-        button5.move(722,900)
-        '''button5.clicked.connect(self.on_click)'''
-
-        button6 = QPushButton('6', self)
-        button6.setToolTip('Window size')
-        button6.resize(70,70)
-        button6.move(790,900)
-        '''button6.clicked.connect(self.on_click)'''
-
-        button7 = QPushButton('7', self)
-        button7.setToolTip('Window size')
-        button7.resize(70,70)
-        button7.move(858,900)
-        '''button7.clicked.connect(self.on_click)'''
-
-        button8 = QPushButton('8', self)
-        button8.setToolTip('Window size')
-        button8.resize(70,70)
-        button8.move(926,900)
-        '''button3.clicked.connect(self.on_click)'''
-
-        button9 = QPushButton('9', self)
-        button9.setToolTip('Window size')
-        button9.resize(70,70)
-        button9.move(994,900)
-        '''button3.clicked.connect(self.on_click)'''
-
-        button10 = QPushButton('10', self)
-        button10.setToolTip('Window size')
-        button10.resize(70,70)
-        button10.move(1062,900)
-        '''button3.clicked.connect(self.on_click)'''
-
-
-        label = QLabel('Window Size',self)
-        label.move(700,850)
-        label.setStyleSheet("font: 20pt Comic Sans MS")
-
+        
+       
         RTTlabel = QLabel('RTT',self)
         RTTlabel.move(200,50)
         RTTlabel.setStyleSheet("font: 20pt Comic Sans MS")
 
-        PktLosslabel = QLabel('Dropped packet count: ',self)
-        PktLosslabel.move(900,800)
-        PktLosslabel.setStyleSheet("font: 10pt Comic Sans MS")
-
-        Successlabel = QLabel('Successful packet transfer rate: ',self)
-        Successlabel.move(1180,800)
-        Successlabel.setStyleSheet("font: 10pt Comic Sans MS")
+        HndShakelabel = QLabel('Handshake',self)
+        HndShakelabel.move(1300,50)
+        HndShakelabel.setStyleSheet("font: 20pt Comic Sans MS")
 
         buttonPlay = QPushButton('',self)
         buttonPlay.setIcon(QtGui.QIcon('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\play.jpg'))
@@ -117,36 +49,50 @@ class App(QDialog):
         buttonForward.setIconSize(QtCore.QSize(62,62))
         buttonForward.move(1354, 898)
 
+
+               
         self.show()
+
+    def handshake(self):
+        print('handshake def working to this point')
+        
+        #open file in which parsed information is stored in 
+        file = open("pckts.txt", "r")
+        print('file was opened')
+        #read the contents of the file
+        contents = file.readlines()
+        print('file was read')
+
+        #variables to hold searching content within parsed file
+        a = 'Acknowledgment number: '
+        s = 'Next sequence number: '
+        #array's to store acknowledgment and sequence numbers
+        seqPk = []
+        ackPk = []
+        
+        with open("C:\\Users\\Andrea\\Desktop\\pckts.txt", "r") as pack:
             
-    @pyqtSlot()
-    def on_click(self):
-        print('button clicked')
+            for line in pack:
+                #condition to search for acknowledgment number
+                if(a in line):
+                    #obtain acknowledgment number
+                    ackLength = line[23:(len(line)-26)]
+                    #print ('acknowledge: ' + ackLength)
+                    ackPk.append(ackLength)
 
-
-class PlotCanvas(FigureCanvas):
-    print("HEY")
-    def __init__(self, parent=None, width=5, height=4, dpi=100):
-        fig = Figure(figsize=(width, height), dpi=dpi)
-        self.axes = fig.add_subplot(111)
-	
- 
-        FigureCanvas.__init__(self, fig)
-        self.setParent(parent)
- 
-        FigureCanvas.setSizePolicy(self,
-                QSizePolicy.Expanding,
-                QSizePolicy.Expanding)
-        FigureCanvas.updateGeometry(self)
-        self.plot()
- 
- 
-    def plot(self):
-        data = [random.random() for i in range(25)]
-        ax = self.figure.add_subplot(111)
-        ax.plot(data, 'r-')
-        ax.set_title('TCP')
-        self.draw()
+                #condition to search for sequence number
+                if(s in line):
+                    #obtain sequence number
+                    seqLength = line[22:(len(line)-30)]
+                    #print ('seq: ' + seqLength)
+                    seqPk.append(seqLength)
+                file.close()
+                
+            print(seqPk[0])
+            for i in range(len(ackPk)):
+                print('Downarrow' + ackPk[i] + seqPk[i])
+            
+        self.show()
  
 if __name__ == '__main__':
     app = QApplication(sys.argv)
