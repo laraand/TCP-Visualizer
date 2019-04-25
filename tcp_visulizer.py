@@ -51,7 +51,7 @@ class App(QDialog):
         formLayout = QFormLayout()
         
         #create widget for handshake vertical lines
-        for x in range(10):
+        for x in range(3):
             inc = inc + 100
             inc2 = inc2 + 200
             
@@ -66,8 +66,7 @@ class App(QDialog):
             formLayout.addRow(self.image2)
             formLayout.addRow(self.image3)
 
-            formLayout.addRow(self.image2)
-            formLayout.addRow(self.image3)
+        
 
         groupBox.setLayout(formLayout)
         scroll = QScrollArea()
