@@ -1,16 +1,12 @@
 import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
-from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
-
+import numpy as np
+import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-from matplotlib import style
-plt.style.use('seaborn-pastel')
-import array
+plt.style.use('bmh')
 
 class App(QDialog):
  
@@ -19,7 +15,7 @@ class App(QDialog):
         self.title = 'TCP Visualizer'
         self.left = 10
         self.top = 10
-        self.width = 1200
+        self.width = 1400
         self.height = 900
         self.initUI()
         #self.keyPressEvent()
@@ -27,31 +23,14 @@ class App(QDialog):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
-        #set(QDialog, 'units', 'normalized', 'position', [0.05 0.15 0.9 0.8])
-        #RTTGraph
-        m = PlotCanvas(self, width=6, height=7)
-        m.move(60,140)
         
-        #UDP
-        u = PlotCanvas(self, width=6, height=7)
-        u.move(700,140)
-
-        label = QLabel('RTT',self)
-        label.move(700,850)
-        label.setStyleSheet("font: 20pt Comic Sans MS")
-
-        RTTlabel = QLabel('RTT',self)
-        RTTlabel.move(200,50)
-        RTTlabel.setStyleSheet("font: 20pt Comic Sans MS")
-
-        PktLosslabel = QLabel('Dropped packet count: ',self)
-        #PktLosslabel = QLabel(numberOfdrop,self)
-        PktLosslabel.move(900,800)
-        PktLosslabel.setStyleSheet("font: 10pt Comic Sans MS")
-
-        Successlabel = QLabel('Successful packet transfer rate: ',self)
-        Successlabel.move(1180,800)
-        Successlabel.setStyleSheet("font: 10pt Comic Sans MS")
+        #Creating graph on main class
+        m = PlotCanvas(self, width=6, height=7)
+        m.move(750,140)
+        
+        UDPlabel = QLabel('TCP vs UDP', self)
+        UDPlabel.move(950,80)
+        UDPlabel.setStyleSheet("font: 20pt Comic Sans MS")
 
         self.show()
             
@@ -62,11 +41,11 @@ class App(QDialog):
     def keyPressEvent(self, e):  
         if e.key() == QtCore.Qt.Key_Escape:
            self.close()
-        if e.key() == QtCore.Qt.Key_F11:
-           if self.isMaximized():
-               self.showNormal()
-           else:
-               self.showMaximized()
+        #if e.key() == QtCore.Qt.Key_F11:
+           #if self.isMaximized():
+               #self.showNormal()
+           #else:
+               #self.showMaximized()
 
 
 class PlotCanvas(FigureCanvas):
@@ -75,48 +54,49 @@ class PlotCanvas(FigureCanvas):
         self.axes = fig.add_subplot(111)
         FigureCanvas.__init__(self, fig)
         self.setParent(parent)
- 
         FigureCanvas.setSizePolicy(self,
                 QSizePolicy.Expanding,
                 QSizePolicy.Expanding)
         self.plot()
- 
+
     def plot(self):
-        xList = []
+        xList = ["TCP", "UDP"]
         yList = []
-        numberOfdrop = 0
-        numPackets = 0
         m = "Packet"
-        time = "The RTT"
+        y_value = 0.0
+        y_value2 = 0.0
         ax = self.figure.add_subplot(111)
+        #TCP calculation
         with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
              for pck in pckts:
-                if m in pck:
-                   num = len(pck)-2
-                   x_value = int(pck[16:num])
-                   numberOfdrop += 1
-                   #print(pck[16:num])
-                   
                 if "Time since previous frame" in pck:
                    num = len(pck)-8
-                   print(pck[47:num])
-                   y_value = float(pck[47:num])
-                   yList.append(y_value)
-                   xList.append(x_value)
-                   numPackets += 1
+                   y_value = y_value + float(pck[47:num])
+        yList.append(y_value)
+        
+        #UDP calculation
+        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
+             for pck in pckts:
+                 if "Time since previous frame" in pck:
+                    num = len(pck)-8
+                    y_value2 = y_value2 + float(pck[47:num])
+        yList.append(y_value2)
 
-        print(numberOfdrop-numPackets)
-        ax.set_title('TCP') 
-        ax.set_xlabel('Smarts')
-        ax.set_ylabel('Probability')           
-        ax.clear()
-        ax.plot(xList, yList)
-        self.draw()
- 
+        x = np.arange(len(xList))
+        n_modes = 1
+        width = 0.35
+        for i in range(n_modes):
+            x_offset = i * width
+            ax.bar(x+x_offset, yList, width, color=plt.rcParams['axes.color_cycle'][i])
+        ax.set_xticks(x)
+        ax.set_xticklabels(yList)
+        ax.set_xticklabels(('TCP', 'UDP'))
+        ax.set_ylabel("Time in seconds")  
+        #ax.set_xlabel("Number of packets captured: ")
+        ax.legend()
+        self.show()
+        
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-   
     ex = App()
     sys.exit(app.exec_())
-
-
