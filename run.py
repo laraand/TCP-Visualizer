@@ -2,6 +2,8 @@ import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
 from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QFormLayout, QScrollArea
+from PyQt5.QtGui import QIcon, QPixmap
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
@@ -25,16 +27,24 @@ class App(QDialog):
         self.setGeometry(self.left, self.top, self.width, self.height)
 
         #logo icon for window
-        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\TCPupdatedlogo.png"))
+        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
         
         #Creating graph on main class
         m = PlotCanvas(self, width=6, height=7)
         m.move(750,140)
         
-        UDPlabel = QLabel('TCP vs UDP', self)
-        UDPlabel.move(950,80)
-        UDPlabel.setStyleSheet("font: 20pt Comic Sans MS")
+        handlabel = QLabel('Handshake', self)
+        handlabel.move(250,50)
+        handlabel.setStyleSheet("font: 12pt Comic Sans MS")
+
+        UDPlabel = QLabel('TCP vs GQU  ', self)
+        UDPlabel.move(850,80)
+        UDPlabel.setStyleSheet("font: 11pt Comic Sans MS")
+        
+        UDPlabel2 = QLabel('IC(UDP)', self)
+        UDPlabel2.move(948,80)
+        UDPlabel2.setStyleSheet("font: 11pt Comic Sans MS")
 
         inc = 0
         inc2 = 0
@@ -46,16 +56,16 @@ class App(QDialog):
         formLayout = QFormLayout()
         
         #create widget for handshake vertical lines
-        for x in range(3):
+        for x in range(1):
             inc = inc + 100
             inc2 = inc2 + 200
             
             #self.image2 = QLabel(self)
-            self.image2.setPixmap(QPixmap('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\right.png'))
+            self.image2.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png'))
             self.image2.setGeometry(1350,0+inc,700,400)
 
             #self.image3 = QLabel(self)
-            self.image3.setPixmap(QPixmap('C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\left.png'))
+            self.image3.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\left.png'))
             self.image3.setGeometry(1350,0+inc2,600,400)
 
             formLayout.addRow(self.image2)
@@ -96,7 +106,7 @@ class App(QDialog):
         ackPk = []
         wndwSize = [] 
         
-        with open("C:\\Users\\Andrea\\Desktop\\pckts.txt", "r") as pack:
+        with open("C:\\Users\\Mayra Ochoa\\Desktop\\pckts.txt", "r") as pack:
             
             for line in pack:
                 #condition to search for acknowledgment number
@@ -162,7 +172,7 @@ class PlotCanvas(FigureCanvas):
         y_value2 = 0.0
         ax = self.figure.add_subplot(111)
         #TCP calculation
-        with open("C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
+        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
              for pck in pckts:
                 if "Time since previous frame" in pck:
                    num = len(pck)-8
@@ -170,7 +180,7 @@ class PlotCanvas(FigureCanvas):
         yList.append(y_value)
         
         #UDP calculation
-        with open("C:\\Users\\Andrea\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
+        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
              for pck in pckts:
                  if "Time since previous frame" in pck:
                     num = len(pck)-8
@@ -185,7 +195,7 @@ class PlotCanvas(FigureCanvas):
             ax.bar(x+x_offset, yList, width, color=plt.rcParams['axes.color_cycle'][i])
         ax.set_xticks(x)
         ax.set_xticklabels(yList)
-        ax.set_xticklabels(('TCP', 'UDP'))
+        ax.set_xticklabels(('TCP', 'GQUIC(UDP)'))
         ax.set_ylabel("Time in seconds")  
         #ax.set_xlabel("Number of packets captured: ")
         ax.legend()
