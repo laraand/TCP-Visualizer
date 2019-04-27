@@ -1,10 +1,11 @@
 import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QFormLayout, QScrollArea
-from PyQt5.QtGui import QIcon, QPixmap
+from PyQt5.QtGui import QIcon, QPixmap, QImage
 import numpy as np
+import array
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
@@ -53,26 +54,38 @@ class App(QDialog):
         self.image3 = QLabel(self)
         
         groupBox = QGroupBox()
+        form_wid = QWidget()
         formLayout = QFormLayout()
+       
         
         #create widget for handshake vertical lines
-        for x in range(1):
-            inc = inc + 100
-            inc2 = inc2 + 200
+        for x in range(10):
+            imageLabel = QLabel()
+            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png')
+            imageLabel.setPixmap(QPixmap.fromImage(image))
+
+            imageLabel2 = QLabel()
+            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\left.png')
+            imageLabel2.setPixmap(QPixmap.fromImage(image2))
+
             
             #self.image2 = QLabel(self)
-            self.image2.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png'))
-            self.image2.setGeometry(1350,0+inc,700,400)
+            '''self.image2.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png'))
+            #self.image2.setGeometry(1350,0+inc,700,400)
 
             #self.image3 = QLabel(self)
             self.image3.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\left.png'))
             self.image3.setGeometry(1350,0+inc2,600,400)
+            inc = inc + 100
+            inc2 = inc2 + 200
+            print(inc)
+            print(inc2)
 
-            formLayout.addRow(self.image2)
-            formLayout.addRow(self.image3)
-
-        
-
+            #formLayout.addRow(QImage(self.image2))'''
+            formLayout.addRow(imageLabel2)
+            formLayout.addRow(imageLabel)
+    
+           
         groupBox.setLayout(formLayout)
         scroll = QScrollArea()
         scroll.setWidget(groupBox)
@@ -82,7 +95,13 @@ class App(QDialog):
 
         layout = QVBoxLayout(self)
         layout.addWidget(scroll)
-        
+        scroll.setFixedHeight(700)
+        scroll.setFixedWidth(510)
+            
+
+        scrollArea = QScrollArea()
+        scrollArea.setWidget(imageLabel)
+
         #call handshake definition, in order to obtain data
         #self.handshake()
 
