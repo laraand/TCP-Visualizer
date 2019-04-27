@@ -61,27 +61,14 @@ class App(QDialog):
         #create widget for handshake vertical lines
         for x in range(10):
             imageLabel = QLabel()
-            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png')
+            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\logo.png')
             imageLabel.setPixmap(QPixmap.fromImage(image))
 
             imageLabel2 = QLabel()
-            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\left.png')
+            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\logo2.png')
             imageLabel2.setPixmap(QPixmap.fromImage(image2))
 
             
-            #self.image2 = QLabel(self)
-            '''self.image2.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\right.png'))
-            #self.image2.setGeometry(1350,0+inc,700,400)
-
-            #self.image3 = QLabel(self)
-            self.image3.setPixmap(QPixmap('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\left.png'))
-            self.image3.setGeometry(1350,0+inc2,600,400)
-            inc = inc + 100
-            inc2 = inc2 + 200
-            print(inc)
-            print(inc2)
-
-            #formLayout.addRow(QImage(self.image2))'''
             formLayout.addRow(imageLabel2)
             formLayout.addRow(imageLabel)
     
@@ -91,12 +78,12 @@ class App(QDialog):
         scroll.setWidget(groupBox)
         scroll.setWidgetResizable(True)
         scroll.setFixedHeight(700)
-        scroll.setFixedWidth(510)
+        scroll.setFixedWidth(700)
 
         layout = QVBoxLayout(self)
         layout.addWidget(scroll)
         scroll.setFixedHeight(700)
-        scroll.setFixedWidth(510)
+        scroll.setFixedWidth(540)
             
 
         scrollArea = QScrollArea()
