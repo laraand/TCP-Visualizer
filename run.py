@@ -61,11 +61,11 @@ class App(QDialog):
         #create widget for handshake vertical lines
         for x in range(10):
             imageLabel = QLabel()
-            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\logo.png')
+            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\logo.png')
             imageLabel.setPixmap(QPixmap.fromImage(image))
 
             imageLabel2 = QLabel()
-            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\logo2.png')
+            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\logo2.png')
             imageLabel2.setPixmap(QPixmap.fromImage(image2))
 
             
@@ -77,13 +77,11 @@ class App(QDialog):
         scroll = QScrollArea()
         scroll.setWidget(groupBox)
         scroll.setWidgetResizable(True)
-        scroll.setFixedHeight(700)
-        scroll.setFixedWidth(700)
 
         layout = QVBoxLayout(self)
         layout.addWidget(scroll)
         scroll.setFixedHeight(700)
-        scroll.setFixedWidth(540)
+        scroll.setFixedWidth(535)
             
 
         scrollArea = QScrollArea()
