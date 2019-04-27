@@ -1,9 +1,8 @@
 import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QFormLayout, QScrollArea
-from PyQt5.QtGui import QIcon, QPixmap, QImage
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget, QFormLayout, QScrollArea
+from PyQt5.QtCore import pyqtSlot, Qt
+from PyQt5.QtGui import QColor, QIcon, QPixmap, QImage
 import numpy as np
 import array
 import matplotlib.pyplot as plt
@@ -26,46 +25,48 @@ class App(QDialog):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
+        # Set window background color
+        self.setAutoFillBackground(True)
+        p = self.palette()
+        p.setColor(self.backgroundRole(), Qt.lightGray)
+        self.setPalette(p)
 
         #logo icon for window
-        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\TCPupdatedlogo.png"))
+        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
         
         #Creating graph on main class
         m = PlotCanvas(self, width=6, height=7)
-        m.move(750,140)
+        m.move(750,100)
         
         handlabel = QLabel('Handshake', self)
-        handlabel.move(250,50)
-        handlabel.setStyleSheet("font: 12pt Comic Sans MS")
+        handlabel.move(230,50)
+        handlabel.setStyleSheet("font: 12pt Proxima No")
 
         UDPlabel = QLabel('TCP vs GQU  ', self)
-        UDPlabel.move(850,80)
-        UDPlabel.setStyleSheet("font: 11pt Comic Sans MS")
+        UDPlabel.move(950,50)
+        UDPlabel.setStyleSheet("font: 11pt Proxima Nova")
         
         UDPlabel2 = QLabel('IC(UDP)', self)
-        UDPlabel2.move(948,80)
-        UDPlabel2.setStyleSheet("font: 11pt Comic Sans MS")
+        UDPlabel2.move(1048,50)
+        UDPlabel2.setStyleSheet("font: 11pt Proxima Nova")
 
-        inc = 0
-        inc2 = 0
-        
-        self.image2 = QLabel(self)
-        self.image3 = QLabel(self)
-        
+    
         groupBox = QGroupBox()
         form_wid = QWidget()
         formLayout = QFormLayout()
+        nameLabel = QLabel(self.tr("Client                                                                                                         Server"))
+        nameLabel.setBuddy(nameLabel)
        
-        
+        formLayout.addRow(nameLabel)
         #create widget for handshake vertical lines
         for x in range(10):
             imageLabel = QLabel()
-            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\logo.png')
+            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo.png')
             imageLabel.setPixmap(QPixmap.fromImage(image))
 
             imageLabel2 = QLabel()
-            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\logo2.png')
+            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo2.png')
             imageLabel2.setPixmap(QPixmap.fromImage(image2))
 
             
@@ -84,8 +85,6 @@ class App(QDialog):
         scroll.setFixedWidth(535)
             
 
-        scrollArea = QScrollArea()
-        scrollArea.setWidget(imageLabel)
 
         #call handshake definition, in order to obtain data
         #self.handshake()
@@ -174,21 +173,27 @@ class PlotCanvas(FigureCanvas):
         m = "Packet"
         y_value = 0.0
         y_value2 = 0.0
+        total_packet_numberTCP = ""
+        total_packet_numberUDP = ""
         ax = self.figure.add_subplot(111)
         #TCP calculation
         with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
+             
              for pck in pckts:
-                if "Time since previous frame" in pck:
-                   num = len(pck)-8
-                   y_value = y_value + float(pck[47:num])
+                if "<LiveCapture" in pck:
+                   total_packet_numberTCP = pck[14:(len(pck)-10)]
+                   
+                elif "Time since previous frame" in pck:
+                   y_value = y_value + float(pck[47:(len(pck)-8)])
         yList.append(y_value)
         
         #UDP calculation
         with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
              for pck in pckts:
-                 if "Time since previous frame" in pck:
-                    num = len(pck)-8
-                    y_value2 = y_value2 + float(pck[47:num])
+                 if "<LiveCapture" in pck:
+                   total_packet_numberUDP = pck[14:(len(pck)-10)]
+                 elif "Time since previous frame" in pck:
+                    y_value2 = y_value2 + float(pck[47:(len(pck)-8)])
         yList.append(y_value2)
 
         x = np.arange(len(xList))
@@ -200,8 +205,14 @@ class PlotCanvas(FigureCanvas):
         ax.set_xticks(x)
         ax.set_xticklabels(yList)
         ax.set_xticklabels(('TCP', 'GQUIC(UDP)'))
-        ax.set_ylabel("Time in seconds")  
-        #ax.set_xlabel("Number of packets captured: ")
+        ax.set_ylabel("Time in seconds")
+        if total_packet_numberTCP == total_packet_numberUDP:
+            ax.set_xlabel("Number of packets captured: " + total_packet_numberTCP)
+        else:
+            ax.set_xlabel("\n Number of packets captured: " + total_packet_numberTCP + "(TCP),  " + total_packet_numberUDP + "(GQuic).")
+                    
+            
+    
         ax.legend()
         self.show()
         
