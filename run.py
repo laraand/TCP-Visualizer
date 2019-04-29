@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 plt.style.use('bmh')
+import warnings
+import matplotlib.cbook
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
 class App(QDialog):
  
@@ -38,6 +41,20 @@ class App(QDialog):
         #Creating graph on main class
         m = PlotCanvas(self, width=6, height=7)
         m.move(750,100)
+
+        button = QPushButton('TCP', self)
+        button.resize(100,50)
+        button.move(880,820)
+        '''button.clicked.connect(self.clickMethod)'''
+        button = QPushButton('GQUIC(UDP)', self)
+        button.resize(100,50)
+        button.move(980,820)
+        '''button.clicked.connect(self.on_click)'''
+        button = QPushButton('TCP vs GQUIC(UDP)', self)
+        button.resize(140,50)
+        button.move(1080,820)
+        '''button.clicked.connect(self.on_click)'''
+        
         
         handlabel = QLabel('Handshake', self)
         handlabel.move(230,50)
@@ -55,7 +72,7 @@ class App(QDialog):
         groupBox = QGroupBox()
         form_wid = QWidget()
         formLayout = QFormLayout()
-        nameLabel = QLabel(self.tr("Client                                                                                                         Server"))
+        nameLabel = QLabel(self.tr("Client                                                                                                       Server"))
         nameLabel.setBuddy(nameLabel)
        
         formLayout.addRow(nameLabel)
@@ -149,11 +166,11 @@ class App(QDialog):
     def keyPressEvent(self, e):  
         if e.key() == QtCore.Qt.Key_Escape:
            self.close()
-        #if e.key() == QtCore.Qt.Key_F11:
-           #if self.isMaximized():
-               #self.showNormal()
-           #else:
-               #self.showMaximized()
+        if e.key() == QtCore.Qt.Key_F11:
+           if self.isMaximized():
+               self.showNormal()
+           else:
+               self.showMaximized()
 
 
 class PlotCanvas(FigureCanvas):
@@ -166,7 +183,6 @@ class PlotCanvas(FigureCanvas):
                 QSizePolicy.Expanding,
                 QSizePolicy.Expanding)
         self.plot()
-
     def plot(self):
         xList = ["TCP", "UDP"]
         yList = []
@@ -199,9 +215,10 @@ class PlotCanvas(FigureCanvas):
         x = np.arange(len(xList))
         n_modes = 1
         width = 0.35
+        
         for i in range(n_modes):
             x_offset = i * width
-            ax.bar(x+x_offset, yList, width, color=plt.rcParams['axes.color_cycle'][i])
+            ax.bar(x+x_offset, yList, width)
         ax.set_xticks(x)
         ax.set_xticklabels(yList)
         ax.set_xticklabels(('TCP', 'GQUIC(UDP)'))
@@ -211,11 +228,9 @@ class PlotCanvas(FigureCanvas):
         else:
             ax.set_xlabel("\n Number of packets captured: " + total_packet_numberTCP + "(TCP),  " + total_packet_numberUDP + "(GQuic).")
                     
-            
     
         ax.legend()
         self.show()
-        
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = App()
