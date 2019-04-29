@@ -35,7 +35,7 @@ class App(QDialog):
         self.setPalette(p)
 
         #logo icon for window
-        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\TCPupdatedlogo.png"))
+        self.setWindowIcon(QtGui.QIcon("imgs\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
         
         #Creating graph on main class
@@ -79,11 +79,11 @@ class App(QDialog):
         #create widget for handshake vertical lines
         for x in range(10):
             imageLabel = QLabel()
-            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo.png')
+            image = QImage('imgs\\logo.png')
             imageLabel.setPixmap(QPixmap.fromImage(image))
 
             imageLabel2 = QLabel()
-            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo2.png')
+            image2 = QImage('imgs\\logo2.png')
             imageLabel2.setPixmap(QPixmap.fromImage(image2))
 
             
@@ -126,7 +126,7 @@ class App(QDialog):
         ackPk = []
         wndwSize = [] 
         
-        with open("C:\\Users\\Mayra Ochoa\\Desktop\\pckts.txt", "r") as pack:
+        with open("pckts.txt", "r") as pack:
             
             for line in pack:
                 #condition to search for acknowledgment number
@@ -193,7 +193,7 @@ class PlotCanvas(FigureCanvas):
         total_packet_numberUDP = ""
         ax = self.figure.add_subplot(111)
         #TCP calculation
-        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
+        with open("pcktsTCP.txt", 'r') as pckts:
              
              for pck in pckts:
                 if "<LiveCapture" in pck:
@@ -204,7 +204,7 @@ class PlotCanvas(FigureCanvas):
         yList.append(y_value)
         
         #UDP calculation
-        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
+        with open("pcktsUDP.txt", 'r') as pckts:
              for pck in pckts:
                  if "<LiveCapture" in pck:
                    total_packet_numberUDP = pck[14:(len(pck)-10)]
