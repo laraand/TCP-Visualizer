@@ -79,11 +79,11 @@ class App(QDialog):
         #create widget for handshake vertical lines
         for x in range(10):
             imageLabel = QLabel()
-            image = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo.png')
+            image = QImage('imgs\\logo.png')
             imageLabel.setPixmap(QPixmap.fromImage(image))
 
             imageLabel2 = QLabel()
-            image2 = QImage('C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\logo2.png')
+            image2 = QImage('imgs\\logo2.png')
             imageLabel2.setPixmap(QPixmap.fromImage(image2))
 
             
@@ -199,17 +199,21 @@ class PlotCanvas(FigureCanvas):
                 if "<LiveCapture" in pck:
                    total_packet_numberTCP = pck[14:(len(pck)-10)]
                    
-                elif "Time since previous frame" in pck:
-                   y_value = y_value + float(pck[47:(len(pck)-8)])
+                elif "Time since previous frame in this TCP stream:" in pck:
+                    #print(pck[20:(len(pck)-8)])
+                    y_value = y_value + float(pck[47:(len(pck)-8)])
+                    
         yList.append(y_value)
+        print(y_value)
         
         #UDP calculation
-        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pckts:
-             for pck in pckts:
+        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pcktss:
+             for pck in pcktss:
                  if "<LiveCapture" in pck:
                    total_packet_numberUDP = pck[14:(len(pck)-10)]
-                 elif "Time since previous frame" in pck:
-                    y_value2 = y_value2 + float(pck[47:(len(pck)-8)])
+                 elif "Time since previous frame" in pck and "Time since previous frame in this TCP stream:" not in pck:
+                      y_value2 = y_value2 + float(float(pck[27:(len(pck)-9)]))
+                      
         yList.append(y_value2)
 
         x = np.arange(len(xList))
