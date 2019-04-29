@@ -199,17 +199,26 @@ class PlotCanvas(FigureCanvas):
                 if "<LiveCapture" in pck:
                    total_packet_numberTCP = pck[14:(len(pck)-10)]
                    
-                elif "Time since previous frame" in pck:
-                   y_value = y_value + float(pck[47:(len(pck)-8)])
+                elif "Time since previous frame in this TCP stream:" in pck:
+                    #print(pck[20:(len(pck)-8)])
+                    y_value = y_value + float(pck[47:(len(pck)-8)])
+                    
         yList.append(y_value)
+        print(y_value)
         
         #UDP calculation
+<<<<<<< HEAD
         with open("pcktsUDP.txt", 'r') as pckts:
              for pck in pckts:
+=======
+        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pcktss:
+             for pck in pcktss:
+>>>>>>> 8a2c9128b2f24f6cdec9b67110dcd6eb1d6fa8c5
                  if "<LiveCapture" in pck:
                    total_packet_numberUDP = pck[14:(len(pck)-10)]
-                 elif "Time since previous frame" in pck:
-                    y_value2 = y_value2 + float(pck[47:(len(pck)-8)])
+                 elif "Time since previous frame" in pck and "Time since previous frame in this TCP stream:" not in pck:
+                      y_value2 = y_value2 + float(float(pck[27:(len(pck)-9)]))
+                      
         yList.append(y_value2)
 
         x = np.arange(len(xList))
