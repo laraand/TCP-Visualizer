@@ -35,7 +35,7 @@ class App(QDialog):
         self.setPalette(p)
 
         #logo icon for window
-        self.setWindowIcon(QtGui.QIcon("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\imgs\\TCPupdatedlogo.png"))
+        self.setWindowIcon(QtGui.QIcon("imgs\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
         
         #Creating graph on main class
@@ -126,7 +126,7 @@ class App(QDialog):
         ackPk = []
         wndwSize = [] 
         
-        with open("C:\\Users\\Mayra Ochoa\\Desktop\\pckts.txt", "r") as pack:
+        with open("pckts.txt", "r") as pack:
             
             for line in pack:
                 #condition to search for acknowledgment number
@@ -193,7 +193,7 @@ class PlotCanvas(FigureCanvas):
         total_packet_numberUDP = ""
         ax = self.figure.add_subplot(111)
         #TCP calculation
-        with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsTCP.txt", 'r') as pckts:
+        with open("pcktsTCP.txt", 'r') as pckts:
              
              for pck in pckts:
                 if "<LiveCapture" in pck:
@@ -207,8 +207,13 @@ class PlotCanvas(FigureCanvas):
         print(y_value)
         
         #UDP calculation
+<<<<<<< HEAD
+        with open("pcktsUDP.txt", 'r') as pckts:
+             for pck in pckts:
+=======
         with open("C:\\Users\\Mayra Ochoa\\Documents\\GitHub\\TCP-Visualizer\\pcktsUDP.txt", 'r') as pcktss:
              for pck in pcktss:
+>>>>>>> 8a2c9128b2f24f6cdec9b67110dcd6eb1d6fa8c5
                  if "<LiveCapture" in pck:
                    total_packet_numberUDP = pck[14:(len(pck)-10)]
                  elif "Time since previous frame" in pck and "Time since previous frame in this TCP stream:" not in pck:
