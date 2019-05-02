@@ -21,6 +21,14 @@ import warnings
 import matplotlib.cbook
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
+import ctypes
+
+user32 = ctypes.windll.user32
+screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+screenwidth = user32.GetSystemMetrics(0)
+screenheight = user32.GetSystemMetrics(1)
+
+
 class App(QDialog):
  
     def __init__(self):
@@ -28,8 +36,13 @@ class App(QDialog):
         self.title = 'TCP Visualizer'
         self.left = 10
         self.top = 10
+<<<<<<< HEAD
         self.width = 1400
         self.height = 900
+=======
+        self.width = screenwidth - 100
+        self.height = screenheight - 100
+>>>>>>> 217299bcd017fb1a3dad6d3907531874df0bdf22
         self.initUI()
         #self.keyPressEvent()
  
@@ -47,6 +60,7 @@ class App(QDialog):
         self.setWindowTitle(self.title)
         
         #Creating graph on main class
+
         m = PlotCanvas(self, width=6, height=7)
         m.move(750,100)
 
@@ -61,6 +75,21 @@ class App(QDialog):
         button = QPushButton('TCP vs GQUIC(UDP)', self)
         button.resize(140,50)
         button.move(1080,820)
+
+        m = PlotCanvas(self, width=4.5, height=4.5)
+        m.move(screenwidth / 2, 100)
+
+        button = QPushButton('TCP', self)
+        button.resize(100,50)
+        button.move(screenwidth /2 ,screenheight - 200)
+        '''button.clicked.connect(self.clickMethod)'''
+        button = QPushButton('GQUIC(UDP)', self)
+        button.resize(100,50)
+        button.move(screenwidth /2 + 100,screenheight - 200)
+        '''button.clicked.connect(self.on_click)'''
+        button = QPushButton('TCP vs GQUIC(UDP)', self)
+        button.resize(140,50)
+        button.move(screenwidth /2 + 200,screenheight - 200)
         '''button.clicked.connect(self.on_click)'''
         
         
@@ -84,6 +113,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
+
 
 
 
@@ -127,10 +157,12 @@ class App(QDialog):
         scroll.setWidgetResizable(True)
 
         layout = QVBoxLayout(self)
+
+        scroll.setFixedHeight(screenheight /2)
+        scroll.setFixedWidth(screenwidth /2)
         layout.addWidget(scroll)
-        scroll.setFixedHeight(700)
-        scroll.setFixedWidth(535)
-            
+        
+        #self.setLayout(layout)
 
 
         #call handshake definition, in order to obtain data
