@@ -36,13 +36,8 @@ class App(QDialog):
         self.title = 'TCP Visualizer'
         self.left = 10
         self.top = 10
-<<<<<<< HEAD
-        self.width = 1400
-        self.height = 900
-=======
         self.width = screenwidth - 100
         self.height = screenheight - 100
->>>>>>> 217299bcd017fb1a3dad6d3907531874df0bdf22
         self.initUI()
         #self.keyPressEvent()
  
