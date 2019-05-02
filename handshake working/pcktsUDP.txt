@@ -1,0 +1,1311 @@
+<LiveCapture (30 packets)>
+Packet (Length: 223)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 209
+	Identification: 0x09da (2522)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xdd9a [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 185.167.164.37
+Layer TCP:
+	Source Port: 52038
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 169
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 170    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 256
+	Calculated window size: 256
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xf583 [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 169
+	Bytes sent since last PSH flag: 169
+	Timestamps
+	Time since first frame in this TCP stream: 0.000000000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+	TCP payload (169 bytes)
+Layer TLS:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 164
+	Encrypted Application Data: 0000000000000004c3896aaafeb1841ffaf1796d1c8d1cd9\xe2\x80\xa6
+
+Packet (Length: 100)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 86
+	Identification: 0x09db (2523)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0xde14 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 185.167.164.37
+Layer TCP:
+	Source Port: 52038
+	Destination Port: 443
+	Stream index: 0
+	TCP Segment Len: 46
+	Sequence number: 170    (relative sequence number)
+	Next sequence number: 216    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x018 (PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7AP\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 256
+	Calculated window size: 256
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0x0e5f [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	SEQ/ACK analysis
+	Bytes in flight: 215
+	Bytes sent since last PSH flag: 46
+	Timestamps
+	Time since first frame in this TCP stream: 0.000307000 seconds
+	Time since previous frame in this TCP stream: 0.000307000 seconds
+	TCP payload (46 bytes)
+Layer TLS:
+	TLSv1.2 Record Layer: Application Data Protocol: http-over-tls
+	Content Type: Application Data (23)
+	Version: TLS 1.2 (0x0303)
+	Length: 41
+	Encrypted Application Data: 00000000000000059f07324f236ff9367a761d620e7fc928\xe2\x80\xa6
+
+Packet (Length: 408)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 394
+	Identification: 0x4bac (19372)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x5df4 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 216.58.194.162
+Layer UDP:
+	Source Port: 55349
+	Destination Port: 443
+	Length: 374
+	Checksum: 0x414a [unverified]
+	Checksum Status: Unverified
+	Stream index: 0
+	Timestamps
+	Time since first frame: 0.000000000 seconds
+	Time since previous frame: 0.000000000 seconds
+DATA
+Packet (Length: 54)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 40
+	Identification: 0x2fcf (12239)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: TCP (6)
+	Header checksum: 0x7f7e [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 54.36.96.121
+Layer TCP:
+	Source Port: 52235
+	Destination Port: 443
+	Stream index: 1
+	TCP Segment Len: 0
+	Sequence number: 1    (relative sequence number)
+	Next sequence number: 1    (relative sequence number)
+	Acknowledgment number: 1    (relative ack number)
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x010 (ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 0... = Push: Not set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...0 = Fin: Not set
+	TCP Flags: \xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7A\xc2\xb7\xc2\xb7\xc2\xb7\xc2\xb7
+	Window size value: 257
+	Calculated window size: 257
+	Window size scaling factor: -1 (unknown)
+	Checksum: 0xdb4a [unverified]
+	Checksum Status: Unverified
+	Urgent pointer: 0
+	Timestamps
+	Time since first frame in this TCP stream: 0.000000000 seconds
+	Time since previous frame in this TCP stream: 0.000000000 seconds
+
+Packet (Length: 266)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 252
+	Identification: 0x1226 (4646)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x80a6 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 172.217.5.102
+Layer UDP:
+	Source Port: 62758
+	Destination Port: 443
+	Length: 232
+	Checksum: 0x51d9 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.000000000 seconds
+	Time since previous frame: 0.000000000 seconds
+DATA
+Packet (Length: 136)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 122
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xf2b0 [validation disabled]
+	Header checksum status: Unverified
+	Source: 216.58.194.162
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 55349
+	Length: 102
+	Checksum: 0xd6cd [unverified]
+	Checksum Status: Unverified
+	Stream index: 0
+	Timestamps
+	Time since first frame: 0.026383000 seconds
+	Time since previous frame: 0.026383000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xc5b0 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.008872000 seconds
+	Time since previous frame: 0.008872000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xea83 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.008875000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 461)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 447
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xda09 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 427
+	Checksum: 0x3ca9 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.009115000 seconds
+	Time since previous frame: 0.000240000 seconds
+DATA
+Packet (Length: 70)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 56
+	Identification: 0x1227 (4647)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x8169 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 172.217.5.102
+Layer UDP:
+	Source Port: 62758
+	Destination Port: 443
+	Length: 36
+	Checksum: 0x7058 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.009551000 seconds
+	Time since previous frame: 0.000436000 seconds
+DATA
+Packet (Length: 163)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 149
+	Identification: 0x1228 (4648)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x810b [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 172.217.5.102
+Layer UDP:
+	Source Port: 62758
+	Destination Port: 443
+	Length: 129
+	Checksum: 0x4770 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.023383000 seconds
+	Time since previous frame: 0.013832000 seconds
+DATA
+Packet (Length: 70)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 56
+	Identification: 0x4bad (19373)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x5f45 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 216.58.194.162
+Layer UDP:
+	Source Port: 55349
+	Destination Port: 443
+	Length: 36
+	Checksum: 0xf4aa [unverified]
+	Checksum Status: Unverified
+	Stream index: 0
+	Timestamps
+	Time since first frame: 0.052288000 seconds
+	Time since previous frame: 0.025905000 seconds
+DATA
+Packet (Length: 146)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 132
+	Identification: 0x1229 (4649)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x811b [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 172.217.5.102
+Layer UDP:
+	Source Port: 62758
+	Destination Port: 443
+	Length: 112
+	Checksum: 0x56e6 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.031074000 seconds
+	Time since previous frame: 0.007691000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xdf94 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.041322000 seconds
+	Time since previous frame: 0.010248000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xff38 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043473000 seconds
+	Time since previous frame: 0.002151000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xd9a7 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043482000 seconds
+	Time since previous frame: 0.000009000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x0594 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043484000 seconds
+	Time since previous frame: 0.000002000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xd55c [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043486000 seconds
+	Time since previous frame: 0.000002000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x5553 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043488000 seconds
+	Time since previous frame: 0.000002000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x8b1a [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043492000 seconds
+	Time since previous frame: 0.000004000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x272d [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043495000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x8c8d [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043496000 seconds
+	Time since previous frame: 0.000001000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x3b4c [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043499000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xaed5 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043502000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x85bf [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043505000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x4237 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043508000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x9210 [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043511000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0xf87a [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043516000 seconds
+	Time since previous frame: 0.000005000 seconds
+DATA
+Packet (Length: 1392)
+Layer ETH:
+	Destination: 60:f6:77:3d:37:db
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 2c:fa:a2:67:a4:81
+	Type: IPv4 (0x0800)
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 1378
+	Identification: 0x0000 (0)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 56
+	Protocol: UDP (17)
+	Header checksum: 0xd666 [validation disabled]
+	Header checksum status: Unverified
+	Source: 172.217.5.102
+	Destination: 10.11.170.218
+Layer UDP:
+	Source Port: 443
+	Destination Port: 62758
+	Length: 1358
+	Checksum: 0x664e [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.043519000 seconds
+	Time since previous frame: 0.000003000 seconds
+DATA
+Packet (Length: 70)
+Layer ETH:
+	Destination: 2c:fa:a2:67:a4:81
+	Address: 2c:fa:a2:67:a4:81
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 60:f6:77:3d:37:db
+	Type: IPv4 (0x0800)
+	Address: 60:f6:77:3d:37:db
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 56
+	Identification: 0x122a (4650)
+	Flags: 0x4000, Don't fragment
+	0... .... .... .... = Reserved bit: Not set
+	.1.. .... .... .... = Don't fragment: Set
+	..0. .... .... .... = More fragments: Not set
+	...0 0000 0000 0000 = Fragment offset: 0
+	Time to live: 128
+	Protocol: UDP (17)
+	Header checksum: 0x8166 [validation disabled]
+	Header checksum status: Unverified
+	Source: 10.11.170.218
+	Destination: 172.217.5.102
+Layer UDP:
+	Source Port: 62758
+	Destination Port: 443
+	Length: 36
+	Checksum: 0x0bfc [unverified]
+	Checksum Status: Unverified
+	Stream index: 1
+	Timestamps
+	Time since first frame: 0.045533000 seconds
+	Time since previous frame: 0.002014000 seconds
+DATA
