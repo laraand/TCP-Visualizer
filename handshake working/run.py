@@ -8,7 +8,7 @@ import sys
 import re
 import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget, QFormLayout, QScrollArea
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget, QFormLayout, QScrollArea, QInputDialog, QLineEdit
 from PyQt5.QtCore import pyqtSlot, Qt
 from PyQt5.QtGui import QColor, QIcon, QPixmap, QImage
 import numpy as np
@@ -26,9 +26,9 @@ user32 = ctypes.windll.user32
 screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
 screenwidth = user32.GetSystemMetrics(0)
 screenheight = user32.GetSystemMetrics(1)
+numPackets = 0
 
 class App(QDialog):
- 
     def __init__(self):
         super().__init__()
         self.title = 'TCP Visualizer'
@@ -36,8 +36,23 @@ class App(QDialog):
         self.top = 10
         self.width = screenwidth - 100
         self.height = screenheight - 100
+        self.numPackets = 0
         self.initUI()
         #self.keyPressEvent()
+
+    def getInteger(self):
+        i, okPressed = QInputDialog.getInt(self, "Get integer","Number of Packets:", 0, 0, 10000, 1)
+        if okPressed:
+            print(i)
+        self.numPackets = i
+        #print("Num packets: ", i)
+        start(self.numPackets)
+
+    def getText(self):
+        text, okPressed = QInputDialog.getText(self, "Continue","Press Enter to continue:", QLineEdit.Normal, "")
+        if okPressed and text != '':
+            print(text)
+        start2(self.numPackets)
  
     def initUI(self):
         self.setWindowTitle(self.title)
@@ -51,6 +66,10 @@ class App(QDialog):
         #logo icon for window
         self.setWindowIcon(QtGui.QIcon("imgs\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
+
+        self.getInteger()
+
+        self.getText()
         
         #Creating graph on main class
         m = PlotCanvas(self, width=4.5, height=4.5)
@@ -59,7 +78,7 @@ class App(QDialog):
         button = QPushButton('TCP', self)
         button.resize(100,50)
         button.move(screenwidth /2 ,screenheight - 200)
-        '''button.clicked.connect(self.clickMethod)'''
+        button.clicked.connect(self.on_click)
         button = QPushButton('GQUIC(UDP)', self)
         button.resize(100,50)
         button.move(screenwidth /2 + 100,screenheight - 200)
@@ -135,7 +154,7 @@ class App(QDialog):
         layout = QVBoxLayout(self)
 
         scroll.setFixedHeight(screenheight /2)
-        scroll.setFixedWidth(screenwidth /2)
+        scroll.setFixedWidth(screenwidth /2 - 125)
         layout.addWidget(scroll)
         
         #self.setLayout(layout)
@@ -332,12 +351,12 @@ def parse():
 
     file.close()
 
-def start():
+def start(numPackets):
+    print("Number of packets: ", numPackets)
     # Main starts here
-
     print("Starting with TCP")
 
-    numPackets = int(input("Enter # packets to capture : "))
+    #numPackets = int(input("Enter # packets to capture : "))
     print("Please wait while packets accumulate...")
 
     #Redirect all output from "prints" to a file called "pckts.txt" (change the path to work on your machine)
@@ -362,9 +381,11 @@ def start():
     parse()
     print("parse finished running")
 
+def start2(numPackets):
+    print("Number of packets: ", numPackets)
     print("Now parsing UDP")
 
-    numPackets = int(input("Enter # of UDP packets to capture : "))
+    #numPackets = int(input("Enter # of UDP packets to capture : "))
     print("Please wait while packets accumulate...")
 
     #Redirect all output from "prints" to a file called "pckts.txt" (change the path to work on your machine)
@@ -389,9 +410,8 @@ def start():
     parseUDP()
     print("UDP parse finished running")
 
-
 if __name__ == '__main__':
-    start()
+    #start()
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
