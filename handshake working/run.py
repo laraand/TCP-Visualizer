@@ -20,7 +20,6 @@ plt.style.use('bmh')
 import warnings
 import matplotlib.cbook
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
-
 import ctypes
 
 user32 = ctypes.windll.user32
@@ -28,7 +27,6 @@ screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
 screenwidth = user32.GetSystemMetrics(0)
 screenheight = user32.GetSystemMetrics(1)
 numPackets = 0
-
 
 class App(QDialog):
     def __init__(self):
@@ -74,22 +72,6 @@ class App(QDialog):
         self.getText()
         
         #Creating graph on main class
-
-        m = PlotCanvas(self, width=6, height=7)
-        m.move(750,100)
-
-        button = QPushButton('TCP', self)
-        button.resize(100,50)
-        button.move(880,820)
-        '''button.clicked.connect(self.clickMethod)'''
-        button = QPushButton('GQUIC(UDP)', self)
-        button.resize(100,50)
-        button.move(980,820)
-        '''button.clicked.connect(self.on_click)'''
-        button = QPushButton('TCP vs GQUIC(UDP)', self)
-        button.resize(140,50)
-        button.move(1080,820)
-
         m = PlotCanvas(self, width=4.5, height=4.5)
         m.move(screenwidth / 2, 100)
 
@@ -127,8 +109,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
-
-
+        #formLayout.move( 250, 250)
 
 
         #create widget for handshake vertical lines
@@ -177,7 +158,6 @@ class App(QDialog):
         layout.addWidget(scroll)
         
         #self.setLayout(layout)
-
 
         #call handshake definition, in order to obtain data
         #self.handshake()
@@ -289,7 +269,7 @@ def parseUDP():
     for line in contents:
         # if "Time since first frame:" in line:
         #   totalTimeUDP += re.findall(r'[-+]?\d*\.\d+|\d+', line)
-
+        
         if "Time since previous frame:" in line:
             timeBetweenUDP += re.findall(r'[-+]?\d*\.\d+|\d+', line)
 
@@ -435,5 +415,4 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
-
 
