@@ -109,7 +109,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
-        #formLayout.move( 250, 250)
+        
 
 
         #create widget for handshake vertical lines
@@ -132,19 +132,6 @@ class App(QDialog):
                 imageLabel.setPixmap(QPixmap.fromImage(image))
                 formLayout.addRow(tL)
                 formLayout.addRow(imageLabel)
-
-            # imageLabel = QLabel()
-            # image = QImage('imgs\\left.png')
-            # imageLabel.setPixmap(QPixmap.fromImage(image))
-
-            # imageLabel2 = QLabel()
-            # image2 = QImage('imgs\\right.png')
-            # imageLabel2.setPixmap(QPixmap.fromImage(image2))
-
-            # formLayout.addRow(tL)
-            # formLayout.addRow(imageLabel2)
-            # formLayout.addRow(imageLabel)
-    
            
         groupBox.setLayout(formLayout)
         scroll = QScrollArea()
@@ -157,10 +144,6 @@ class App(QDialog):
         scroll.setFixedWidth(screenwidth /2 - 125)
         layout.addWidget(scroll)
         
-        #self.setLayout(layout)
-
-        #call handshake definition, in order to obtain data
-        #self.handshake()
 
         self.show()
 
