@@ -8,7 +8,7 @@ import sys
 import re
 import sys
 from PyQt5 import QtCore, QtWidgets, QtGui
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget, QFormLayout, QScrollArea
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QGroupBox, QDialog, QVBoxLayout,QLabel, QSizePolicy, QMessageBox, QLineEdit, QWidget, QFormLayout, QScrollArea, QInputDialog, QLineEdit
 from PyQt5.QtCore import pyqtSlot, Qt
 from PyQt5.QtGui import QColor, QIcon, QPixmap, QImage
 import numpy as np
@@ -20,18 +20,39 @@ plt.style.use('bmh')
 import warnings
 import matplotlib.cbook
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
+import ctypes
+
+user32 = ctypes.windll.user32
+screensize = user32.GetSystemMetrics(0), user32.GetSystemMetrics(1)
+screenwidth = user32.GetSystemMetrics(0)
+screenheight = user32.GetSystemMetrics(1)
+numPackets = 0
 
 class App(QDialog):
- 
     def __init__(self):
         super().__init__()
         self.title = 'TCP Visualizer'
         self.left = 10
         self.top = 10
-        self.width = 1400
-        self.height = 900
+        self.width = screenwidth - 100
+        self.height = screenheight - 100
+        self.numPackets = 0
         self.initUI()
         #self.keyPressEvent()
+
+    def getInteger(self):
+        i, okPressed = QInputDialog.getInt(self, "Get integer","Number of Packets:", 0, 0, 10000, 1)
+        if okPressed:
+            print(i)
+        self.numPackets = i
+        #print("Num packets: ", i)
+        start(self.numPackets)
+
+    def getText(self):
+        text, okPressed = QInputDialog.getText(self, "Continue","Press Enter to continue:", QLineEdit.Normal, "")
+        if okPressed and text != '':
+            print(text)
+        start2(self.numPackets)
  
     def initUI(self):
         self.setWindowTitle(self.title)
@@ -45,22 +66,26 @@ class App(QDialog):
         #logo icon for window
         self.setWindowIcon(QtGui.QIcon("imgs\\TCPupdatedlogo.png"))
         self.setWindowTitle(self.title)
+
+        self.getInteger()
+
+        self.getText()
         
         #Creating graph on main class
-        m = PlotCanvas(self, width=6, height=7)
-        m.move(750,100)
+        m = PlotCanvas(self, width=4.5, height=4.5)
+        m.move(screenwidth / 2, 100)
 
         button = QPushButton('TCP', self)
         button.resize(100,50)
-        button.move(880,820)
-        '''button.clicked.connect(self.clickMethod)'''
+        button.move(screenwidth /2 ,screenheight - 200)
+        button.clicked.connect(self.on_click)
         button = QPushButton('GQUIC(UDP)', self)
         button.resize(100,50)
-        button.move(980,820)
+        button.move(screenwidth /2 + 100,screenheight - 200)
         '''button.clicked.connect(self.on_click)'''
         button = QPushButton('TCP vs GQUIC(UDP)', self)
         button.resize(140,50)
-        button.move(1080,820)
+        button.move(screenwidth /2 + 200,screenheight - 200)
         '''button.clicked.connect(self.on_click)'''
         
         
@@ -84,7 +109,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
-
+        #formLayout.move( 250, 250)
 
 
         #create widget for handshake vertical lines
@@ -127,11 +152,12 @@ class App(QDialog):
         scroll.setWidgetResizable(True)
 
         layout = QVBoxLayout(self)
-        layout.addWidget(scroll)
-        scroll.setFixedHeight(700)
-        scroll.setFixedWidth(535)
-            
 
+        scroll.setFixedHeight(screenheight /2)
+        scroll.setFixedWidth(screenwidth /2 - 125)
+        layout.addWidget(scroll)
+        
+        #self.setLayout(layout)
 
         #call handshake definition, in order to obtain data
         #self.handshake()
@@ -243,7 +269,7 @@ def parseUDP():
     for line in contents:
         # if "Time since first frame:" in line:
         #   totalTimeUDP += re.findall(r'[-+]?\d*\.\d+|\d+', line)
-
+        
         if "Time since previous frame:" in line:
             timeBetweenUDP += re.findall(r'[-+]?\d*\.\d+|\d+', line)
 
@@ -325,12 +351,12 @@ def parse():
 
     file.close()
 
-def start():
+def start(numPackets):
+    print("Number of packets: ", numPackets)
     # Main starts here
-
     print("Starting with TCP")
 
-    numPackets = int(input("Enter # packets to capture : "))
+    #numPackets = int(input("Enter # packets to capture : "))
     print("Please wait while packets accumulate...")
 
     #Redirect all output from "prints" to a file called "pckts.txt" (change the path to work on your machine)
@@ -355,9 +381,11 @@ def start():
     parse()
     print("parse finished running")
 
+def start2(numPackets):
+    print("Number of packets: ", numPackets)
     print("Now parsing UDP")
 
-    numPackets = int(input("Enter # of UDP packets to capture : "))
+    #numPackets = int(input("Enter # of UDP packets to capture : "))
     print("Please wait while packets accumulate...")
 
     #Redirect all output from "prints" to a file called "pckts.txt" (change the path to work on your machine)
@@ -382,11 +410,8 @@ def start():
     parseUDP()
     print("UDP parse finished running")
 
-
 if __name__ == '__main__':
-    start()
+    #start()
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
-
-
