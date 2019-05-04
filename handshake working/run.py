@@ -177,8 +177,8 @@ class App(QDialog):
     def on_clickBoth(self):
         #print('button clicked')
         self.PC = PlotCanvas()
-        self.PC = PlotCanvas(self, width=4.5, height=4.5)
-        self.PC.move(screenwidth / 2, 100)
+        #self.PC = PlotCanvas(self, width=4.5, height=4.5)
+        #self.PC.move(screenwidth / 2, 100)
         self.PC.show()
 
     def keyPressEvent(self, e):  
