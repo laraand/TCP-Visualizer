@@ -78,15 +78,17 @@ class App(QDialog):
         button = QPushButton('TCP', self)
         button.resize(100,50)
         button.move(screenwidth /2 ,screenheight - 200)
-        button.clicked.connect(self.on_click)
+        button.clicked.connect(self.on_clickTCP)
+        
         button = QPushButton('GQUIC(UDP)', self)
         button.resize(100,50)
         button.move(screenwidth /2 + 100,screenheight - 200)
-        '''button.clicked.connect(self.on_click)'''
+        button.clicked.connect(self.on_clickUDP)
+        
         button = QPushButton('TCP vs GQUIC(UDP)', self)
         button.resize(140,50)
         button.move(screenwidth /2 + 200,screenheight - 200)
-        '''button.clicked.connect(self.on_click)'''
+        button.clicked.connect(self.on_clickBoth)
         
         
         handlabel = QLabel('Handshake', self)
@@ -109,7 +111,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
-        
+        #formLayout.move( 250, 250)
 
 
         #create widget for handshake vertical lines
@@ -132,6 +134,19 @@ class App(QDialog):
                 imageLabel.setPixmap(QPixmap.fromImage(image))
                 formLayout.addRow(tL)
                 formLayout.addRow(imageLabel)
+
+            # imageLabel = QLabel()
+            # image = QImage('imgs\\left.png')
+            # imageLabel.setPixmap(QPixmap.fromImage(image))
+
+            # imageLabel2 = QLabel()
+            # image2 = QImage('imgs\\right.png')
+            # imageLabel2.setPixmap(QPixmap.fromImage(image2))
+
+            # formLayout.addRow(tL)
+            # formLayout.addRow(imageLabel2)
+            # formLayout.addRow(imageLabel)
+    
            
         groupBox.setLayout(formLayout)
         scroll = QScrollArea()
@@ -144,13 +159,27 @@ class App(QDialog):
         scroll.setFixedWidth(screenwidth /2 - 125)
         layout.addWidget(scroll)
         
+        #self.setLayout(layout)
+
+        #call handshake definition, in order to obtain data
+        #self.handshake()
 
         self.show()
 
             
     @pyqtSlot()
-    def on_click(self):
-        print('button clicked')
+    def on_clickUDP(self):
+        print('UDP button clicked')
+
+    def on_clickTCP(self):
+        print('TCP button clicked')
+
+    def on_clickBoth(self):
+        #print('button clicked')
+        self.PC = PlotCanvas()
+        self.PC = PlotCanvas(self, width=4.5, height=4.5)
+        self.PC.move(screenwidth / 2, 100)
+        self.PC.show()
 
     def keyPressEvent(self, e):  
         if e.key() == QtCore.Qt.Key_Escape:
