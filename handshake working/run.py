@@ -60,7 +60,7 @@ class App(QDialog):
         # Set window background color
         self.setAutoFillBackground(True)
         p = self.palette()
-        p.setColor(self.backgroundRole(), Qt.darkCyan)
+        p.setColor(self.backgroundRole(), Qt.gray)
         self.setPalette(p)
 
         #logo icon for window
@@ -140,8 +140,8 @@ class App(QDialog):
 
         layout = QVBoxLayout(self)
 
-        scroll.setFixedHeight((screenheight /2)+120)
-        scroll.setFixedWidth(screenwidth /2 - 220)
+        scroll.setFixedHeight((screenheight /2)+155)
+        scroll.setFixedWidth(screenwidth /2 - 205)
         groupBox.move(250,100)
         layout.addWidget(scroll)
 
