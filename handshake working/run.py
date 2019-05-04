@@ -60,7 +60,7 @@ class App(QDialog):
         # Set window background color
         self.setAutoFillBackground(True)
         p = self.palette()
-        p.setColor(self.backgroundRole(), Qt.lightGray)
+        p.setColor(self.backgroundRole(), Qt.darkCyan)
         self.setPalette(p)
 
         #logo icon for window
@@ -72,21 +72,22 @@ class App(QDialog):
         self.getText()
         
         #Creating graph on main class
-        m = PlotCanvas(self, width=4.5, height=4.5)
+        m = PlotCanvas(self, width=6, height=5.5)
         m.move(screenwidth / 2, 100)
+        m.plot()
 
         button = QPushButton('TCP', self)
         button.resize(100,50)
-        button.move(screenwidth /2 ,screenheight - 200)
-        button.clicked.connect(self.on_click)
+        button.move(screenwidth /2 +150,screenheight - 200)
+        button.clicked.connect(self.on_clickTCP)
         button = QPushButton('GQUIC(UDP)', self)
         button.resize(100,50)
-        button.move(screenwidth /2 + 100,screenheight - 200)
-        '''button.clicked.connect(self.on_click)'''
+        button.move(screenwidth /2 + 250,screenheight - 200)
+        button.clicked.connect(self.on_clickUDP)
         button = QPushButton('TCP vs GQUIC(UDP)', self)
         button.resize(140,50)
-        button.move(screenwidth /2 + 200,screenheight - 200)
-        '''button.clicked.connect(self.on_click)'''
+        button.move(screenwidth /2 + 350,screenheight - 200)
+        button.clicked.connect(self.on_clickBoth)
         
         
         handlabel = QLabel('Handshake', self)
@@ -109,8 +110,7 @@ class App(QDialog):
         nameLabel.setBuddy(nameLabel)
 
         formLayout.addRow(nameLabel)
-        #formLayout.move( 250, 250)
-
+        
 
         #create widget for handshake vertical lines
         source = packetSeqAck[0][3]
@@ -132,19 +132,6 @@ class App(QDialog):
                 imageLabel.setPixmap(QPixmap.fromImage(image))
                 formLayout.addRow(tL)
                 formLayout.addRow(imageLabel)
-
-            # imageLabel = QLabel()
-            # image = QImage('imgs\\left.png')
-            # imageLabel.setPixmap(QPixmap.fromImage(image))
-
-            # imageLabel2 = QLabel()
-            # image2 = QImage('imgs\\right.png')
-            # imageLabel2.setPixmap(QPixmap.fromImage(image2))
-
-            # formLayout.addRow(tL)
-            # formLayout.addRow(imageLabel2)
-            # formLayout.addRow(imageLabel)
-    
            
         groupBox.setLayout(formLayout)
         scroll = QScrollArea()
@@ -153,21 +140,34 @@ class App(QDialog):
 
         layout = QVBoxLayout(self)
 
-        scroll.setFixedHeight(screenheight /2)
-        scroll.setFixedWidth(screenwidth /2 - 125)
+        scroll.setFixedHeight((screenheight /2)+120)
+        scroll.setFixedWidth(screenwidth /2 - 220)
+        groupBox.move(250,100)
         layout.addWidget(scroll)
-        
-        #self.setLayout(layout)
 
-        #call handshake definition, in order to obtain data
-        #self.handshake()
+        p = self.palette()
+        p.setColor(self.backgroundRole(), Qt.white)
+        groupBox.setPalette(p)
+        
 
         self.show()
 
             
     @pyqtSlot()
-    def on_click(self):
-        print('button clicked')
+    def on_clickUDP(self):
+        j = PlotCanvas(self, width=6, height=5.5)
+        j.move(screenwidth / 2, 100)
+        j.plotGraph()
+
+    def on_clickBoth(self):
+        k = PlotCanvas(self, width=6, height=5.5)
+        k.move(screenwidth / 2, 100)
+        k.plot()
+
+    def on_clickTCP(self):
+        l = PlotCanvas(self, width=6, height=5.5)
+        l.move(screenwidth / 2, 100)
+        l.plotGraph2()
 
     def keyPressEvent(self, e):  
         if e.key() == QtCore.Qt.Key_Escape:
@@ -180,7 +180,7 @@ class App(QDialog):
 
 
 class PlotCanvas(FigureCanvas):
-    def __init__(self, parent=None, width=5, height=4, dpi=100):
+    def __init__(self, parent=None, width=5, height=4, dpi=100, r="udp"):
         fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = fig.add_subplot(111)
         FigureCanvas.__init__(self, fig)
@@ -188,7 +188,7 @@ class PlotCanvas(FigureCanvas):
         FigureCanvas.setSizePolicy(self,
                 QSizePolicy.Expanding,
                 QSizePolicy.Expanding)
-        self.plot()
+       
     def plot(self):
         xList = ["TCP", "UDP"]
         yList = []
@@ -242,10 +242,62 @@ class PlotCanvas(FigureCanvas):
         else:
             ax.set_xlabel("\n Number of packets captured: " + total_packet_numberTCP + "(TCP),  " + total_packet_numberUDP + "(GQuic).")
                     
-    
         ax.legend()
         self.show()
+#new graph
+    def plotGraph(self):
+        xList = []
+        yList = []
+        numberOfdrop = 0
+        numPackets = 0
+        m = "Packet"
+        time = "The RTT"
+        ax = self.figure.add_subplot(111)
+        with open("pcktsUDP.txt", 'r') as pckts:
+             for pck in pckts:
+                #assigns value for x acorrding to each packet
+                if m in pck:
+                   x_value = int(numberOfdrop)
+                   numberOfdrop += 1
+                #assigns x and y value only if the packet success   
+                elif "Time since previous frame" in pck and "Time since previous frame in this TCP stream:" not in pck:
+                   y_value = float(float(pck[27:(len(pck)-9)]))
+                   yList.append(y_value)
+                   xList.append(x_value)
+                   numPackets += 1
 
+        ax.plot(xList, yList) 
+        ax.set_xlabel("Packet #")
+        ax.set_ylabel("Time in seconds")           
+        self.show()
+#new graph
+    def plotGraph2(self):   
+        xList = []
+        yList = []
+        numberOfdrop = 0
+        numPackets = 0
+        m = "Packet"
+        time = "The RTT"
+        ax = self.figure.add_subplot(111)
+        with open("pcktsTCP.txt", 'r') as pckts:
+             for pck in pckts:
+                #assigns value for x acorrding to each packet
+                if m in pck:
+                   x_value = int(numberOfdrop)
+                   numberOfdrop += 1
+                #assigns x and y value only if the packet success   
+                elif "Time since previous frame in this TCP stream:" in pck:
+                    #print(pck[20:(len(pck)-8)])
+                   y_value = float(pck[47:(len(pck)-8)])
+                   yList.append(y_value)
+                   xList.append(x_value)
+                   numPackets += 1
+
+        ax.plot(xList, yList) 
+        ax.set_xlabel("Packet #")
+        ax.set_ylabel("Time in seconds")           
+        self.show()
+ 
 # SNIFFY PORTION
 
 #Variables

@@ -30,7 +30,11 @@ def parse():
 =======
         #print(line.strip()) # print lines as we're going through file
         print(line)
+<<<<<<< HEAD
 >>>>>>> 7c694684b63d77a0125ffdf4db4822fbab856c16
+=======
+>>>>>>> 217299bcd017fb1a3dad6d3907531874df0bdf22
+>>>>>>> a3e5d35ab46bc10c5554a438b7ed2ae4f884c767
 
     file.close()
 
@@ -59,7 +63,11 @@ for pkt in capture:
     else:
         print("Thats UDP Garbage\n")
         numPackets += 1
+<<<<<<< HEAD
 >>>>>>> 7c694684b63d77a0125ffdf4db4822fbab856c16
+=======
+>>>>>>> 217299bcd017fb1a3dad6d3907531874df0bdf22
+>>>>>>> a3e5d35ab46bc10c5554a438b7ed2ae4f884c767
 
 file.close()
 sys.stdout = sys.__stdout__
@@ -69,5 +77,9 @@ parse()
 <<<<<<< HEAD
 =======
 print(numPackets)
+<<<<<<< HEAD
 >>>>>>> 7c694684b63d77a0125ffdf4db4822fbab856c16
+=======
+>>>>>>> 217299bcd017fb1a3dad6d3907531874df0bdf22
+>>>>>>> a3e5d35ab46bc10c5554a438b7ed2ae4f884c767
 print("parse finished running")
