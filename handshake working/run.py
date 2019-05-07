@@ -1,4 +1,3 @@
-
 import warnings
 import matplotlib.cbook
 import pyshark
@@ -41,7 +40,7 @@ class App(QDialog):
         #self.keyPressEvent()
 
     def getInteger(self):
-        i, okPressed = QInputDialog.getInt(self, "Get integer","Number of Packets:", 0, 0, 10000, 1)
+        i, okPressed = QInputDialog.getInt(self, "       ","Number of Packets:", 0, 0, 10000, 1)
         if okPressed:
             print(i)
         self.numPackets = i
@@ -89,19 +88,9 @@ class App(QDialog):
         button.move(screenwidth /2 + 350,screenheight - 200)
         button.clicked.connect(self.on_clickBoth)
         
-        
         handlabel = QLabel('Handshake', self)
         handlabel.move(230,50)
         handlabel.setStyleSheet("font: 12pt Proxima No")
-
-        UDPlabel = QLabel('TCP vs GQU  ', self)
-        UDPlabel.move(950,50)
-        UDPlabel.setStyleSheet("font: 11pt Proxima Nova")
-        
-        UDPlabel2 = QLabel('IC(UDP)', self)
-        UDPlabel2.move(1048,50)
-        UDPlabel2.setStyleSheet("font: 11pt Proxima Nova")
-
     
         groupBox = QGroupBox()
         form_wid = QWidget()
@@ -149,11 +138,11 @@ class App(QDialog):
         p.setColor(self.backgroundRole(), Qt.white)
         groupBox.setPalette(p)
         
-
         self.show()
 
             
     @pyqtSlot()
+ 
     def on_clickUDP(self):
         j = PlotCanvas(self, width=6, height=5.5)
         j.move(screenwidth / 2, 100)
@@ -163,7 +152,7 @@ class App(QDialog):
         k = PlotCanvas(self, width=6, height=5.5)
         k.move(screenwidth / 2, 100)
         k.plot()
-
+        
     def on_clickTCP(self):
         l = PlotCanvas(self, width=6, height=5.5)
         l.move(screenwidth / 2, 100)
@@ -236,6 +225,7 @@ class PlotCanvas(FigureCanvas):
         ax.set_xticks(x)
         ax.set_xticklabels(yList)
         ax.set_xticklabels(('TCP', 'GQUIC(UDP)'))
+        ax.set_title('TCP vs GQUIC(UDP)')
         ax.set_ylabel("Time in seconds")
         if total_packet_numberTCP == total_packet_numberUDP:
             ax.set_xlabel("Number of packets captured: " + total_packet_numberTCP)
@@ -265,8 +255,10 @@ class PlotCanvas(FigureCanvas):
                    yList.append(y_value)
                    xList.append(x_value)
                    numPackets += 1
-
+                 
+        print(numberOfdrop)
         ax.plot(xList, yList) 
+        ax.set_title('GQUIC(UDP)')
         ax.set_xlabel("Packet #")
         ax.set_ylabel("Time in seconds")           
         self.show()
@@ -287,12 +279,11 @@ class PlotCanvas(FigureCanvas):
                    numberOfdrop += 1
                 #assigns x and y value only if the packet success   
                 elif "Time since previous frame in this TCP stream:" in pck:
-                    #print(pck[20:(len(pck)-8)])
                    y_value = float(pck[47:(len(pck)-8)])
                    yList.append(y_value)
                    xList.append(x_value)
                    numPackets += 1
-
+        ax.set_title('TCP')
         ax.plot(xList, yList) 
         ax.set_xlabel("Packet #")
         ax.set_ylabel("Time in seconds")           
