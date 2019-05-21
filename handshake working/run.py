@@ -77,15 +77,15 @@ class App(QDialog):
 
         button = QPushButton('TCP', self)
         button.resize(100,50)
-        button.move(screenwidth /2 +150,screenheight - 200)
+        button.move(screenwidth /2 +150,screenheight - 100)
         button.clicked.connect(self.on_clickTCP)
         button = QPushButton('GQUIC(UDP)', self)
         button.resize(100,50)
-        button.move(screenwidth /2 + 250,screenheight - 200)
+        button.move(screenwidth /2 + 250,screenheight - 100)
         button.clicked.connect(self.on_clickUDP)
         button = QPushButton('TCP vs GQUIC(UDP)', self)
         button.resize(140,50)
-        button.move(screenwidth /2 + 350,screenheight - 200)
+        button.move(screenwidth /2 + 350,screenheight - 100)
         button.clicked.connect(self.on_clickBoth)
         
         handlabel = QLabel('Handshake', self)
